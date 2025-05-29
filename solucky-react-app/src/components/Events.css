@@ -179,8 +179,17 @@
         margin-top: 20px;
     }
 
+    @keyframes fadeInOut {
+        0%   { opacity: 0; }    /* invisible at start */
+        20%  { opacity: 1; }    /* fade in over first 0.4s */
+        80%  { opacity: 1; }    /* stay visible until 3.6s */
+        100% { opacity: 0; }    /* fade out during last 0.4s */
+    }
+
     .strip-text{
         font-size: 25px;
+        opacity: 0;
+        animation: fadeInOut 4s ease-in-out infinite;
     }
   }
 
