@@ -101,13 +101,13 @@ const Home = () =>{
                         to grow our brand.
                     </p>
                     <p className='paragraph-message-home'>
-                        “Our talented & devoted contributors team just released issue #25
+                        Our talented & devoted contributors team just released issue #25
                         – Winter 2025, themed ‘Clocked In’, a powerful tribute to trendy
                         corporate culture through the lens of Women’s History Month &
                         Black History Month. With an all-female cast & an extra focus on
                         Black women, this issue showcases the creativity of the modern
                         working women – capturing power dressing, leadership, & the bold
-                        new era of corporate fashion (including the non-HR friendly).”
+                        new era of corporate fashion (including the non-HR friendly).
                     </p>
                     </div>
                 </section>
