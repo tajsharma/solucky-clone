@@ -191,11 +191,13 @@ padding: 7rem 2rem;
 
 .flipbook-canvas {
   width: 100%;
-  max-width: 1500px;       /* limits size on big screens */
+  max-width: 1200px;       /* limits size on big screens */
   padding: 2rem;
   margin: 0 auto;         /* center horizontally */
   box-sizing: border-box;
 }
+
+
 
 .flipbook-arrow-container{
   width:80vw;

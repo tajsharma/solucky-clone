@@ -113,7 +113,7 @@ const Home = () =>{
                 </section>
 
                 <section className="cards-section">
-                    <Link to="/shop" className="card-link-wrapper">
+                    <Link to="/shop" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                             <div className="card-face card-back">
@@ -125,7 +125,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>
-                    <Link to="/magazine" className="card-link-wrapper">
+                    <Link to="/magazine" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">
@@ -137,7 +137,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>
-                    <Link to="/media" className="card-link-wrapper">
+                    <Link to="/media" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">
@@ -149,7 +149,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>    
-                    <Link to="/collabs" className="card-link-wrapper">        
+                    <Link to="/collabs" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>        
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">
@@ -161,7 +161,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>    
-                    <Link to="/events" className="card-link-wrapper">
+                    <Link to="/events" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">
@@ -173,7 +173,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>
-                    <Link to="/team" className="card-link-wrapper">
+                    <Link to="/team" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">
@@ -185,7 +185,7 @@ const Home = () =>{
                             </div>
                         </div>
                     </Link>
-                    <Link to="/about" className="card-link-wrapper">
+                    <Link to="/about" className="card-link-wrapper" onClick={() => window.scrollTo(0, 0)}>
                         <div className="card">
                             <div className="card-inner">
                                 <div className="card-face card-back">

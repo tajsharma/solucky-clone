@@ -56,8 +56,8 @@
 
 .buttons-wrapper{
     display: flex;
-    width: 85.6vw;
-    justify-content: space-evenly;
+    width: 95vw;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 30px;
