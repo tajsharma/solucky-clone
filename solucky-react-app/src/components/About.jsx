@@ -5,14 +5,10 @@ import Gallery from './Gallery';
 import './About.css';
 
 const aboutImages = [
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-  "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
+  "https://res.cloudinary.com/dltjxocio/image/upload/v1749328478/IMG_4022_jd4yit.jpg",
+  "https://res.cloudinary.com/dltjxocio/image/upload/v1749328479/IMG_3892_td9xke.jpg",
+  "",
+  
 ];
 
 
