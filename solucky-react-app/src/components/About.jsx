@@ -91,7 +91,11 @@ const aboutImages = [
   "https://res.cloudinary.com/dltjxocio/image/upload/v1749328356/100_1115_gmgnwz.jpg",
   "https://res.cloudinary.com/dltjxocio/image/upload/v1749328354/SAM_1645_nikc8a.jpg",
   "https://res.cloudinary.com/dltjxocio/image/upload/v1749328354/DSC05639_sli6t3.jpg",
-  "https://res.cloudinary.com/dltjxocio/image/upload/v1749328346/1DCA8C73-7135-4852-B452-BBC47F22C102_kaw6nt.jpg"
+  "https://res.cloudinary.com/dltjxocio/image/upload/v1749328346/1DCA8C73-7135-4852-B452-BBC47F22C102_kaw6nt.jpg",
+  "https://res.cloudinary.com/dltjxocio/video/upload/v1749499694/SAM_1601_uyjysi.mp4",
+  "https://res.cloudinary.com/dltjxocio/video/upload/v1749499697/SAM_1595_qmosn4.mp4",
+  "https://res.cloudinary.com/dltjxocio/video/upload/v1749499699/SAM_1603_avu35a.mp4",
+  "https://res.cloudinary.com/dltjxocio/video/upload/v1749499702/SAM_1580_vbofmo.mp4"
 ];
 
 
