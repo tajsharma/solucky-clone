@@ -1,24 +1,26 @@
 import React from "react";
 import "./EmbeddedContent.css";
 
-const photoshoots = Array.from({ length: 8 }).map((_, i) => ({
-  title: "Photoshoot Title",
-  issue: "#4",
-  thumbnail: "../Assets/Media/sample-thumb.png", // replace with actual path
-}));
-
-const EmbeddedContent = () => {
+// items: array of { id, title, issue, thumbnail, images }
+// onSelect: function(id) => void
+const EmbeddedContent = ({ items, onSelect }) => {
   return (
     <div className="embedded-container">
       <h1 className="embedded-title">Albums</h1>
       <h2 className="embedded-subtitle">Magazine Photoshoots</h2>
 
       <div className="grid-wrapper">
-        {photoshoots.map((item, index) => (
-          <div key={index} className="photo-card">
-            <img src={item.thumbnail} alt={item.title} className="photo-thumb" />
-            <div className="photo-title">{item.title}</div>
-            <div className="photo-issue">issue {item.issue}</div>
+        {items.map(({ id, title, issue, thumbnail }) => (
+          <div key={id} className="photo-card">
+            <img
+              src={thumbnail}
+              alt={title}
+              className="photo-thumb"
+              onClick={() => onSelect(id)}
+              style={{ cursor: 'pointer' }}
+            />
+            <div className="photo-title">{title}</div>
+            <div className="photo-issue">issue {issue}</div>
           </div>
         ))}
       </div>
