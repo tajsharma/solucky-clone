@@ -77,7 +77,7 @@ const Team = () =>{
                             </button>
                             {openGallery && (
                                 <Gallery
-                                title="BTS ✹"
+                                title="BTS"
                                 date="last updated may 2025"
                                 images={teamBTS_Images}
                                 onClose={() => setOpenGallery(false)}
