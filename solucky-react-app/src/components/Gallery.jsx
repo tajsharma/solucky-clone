@@ -5,68 +5,124 @@ export default function Gallery({
   title,
   date,
   description,
-  images,
+  images,   // still using images[], but now can contain video URLs too
   onClose,
 }) {
   const [index, setIndex] = useState(0);
-  const total = images.length;
 
-  // helper to wrap around
+  // 1) Normalize every entry to { type, src, poster? }
+  const media = images.map((item) => {
+    if (typeof item === "string") {
+      const ext = item.split("?")[0].split(".").pop().toLowerCase();
+      if (["mp4", "webm", "ogg"].includes(ext)) {
+        return { type: "video", src: item };
+      } else {
+        return { type: "image", src: item };
+      }
+    }
+    // if you pass { type, src, poster } objects, we honor them directly
+    return item;
+  });
+
+  const total = media.length;
+
   const prevSlide = () => setIndex((i) => (i - 1 + total) % total);
   const nextSlide = () => setIndex((i) => (i + 1) % total);
 
-  // pick the next three indices
   const thumbs = [1, 2, 3].map((off) => (index + off) % total);
 
   return (
     <div className="gallery-overlay">
       <div className="gallery-container">
 
-        {/* left sidebar */}
+        {/* Sidebar thumbnails/nav */}
         <div className="gallery-sidebar">
           <button className="thumb-nav gallery-buttons" onClick={prevSlide}>
-            <img src="../Assets/Galleries/arrow-up.svg" alt="<-" className="back-button-gallery back-next"></img>
-          </button>
-          {thumbs.map((ti) => (
             <img
-              key={ti}
-              className="gallery-thumb"
-              src={images[ti]}
-              alt={`thumb ${ti + 1}`}
-              onClick={() => setIndex(ti)}
+              src="../Assets/Galleries/arrow-up.svg"
+              alt="prev"
+              className="back-button-gallery back-next"
             />
-          ))}
+          </button>
+
+          {thumbs.map((ti) => {
+            const item = media[ti];
+            return item.type === "video" ? (
+              <video
+                key={ti}
+                className="gallery-thumb"
+                muted
+                poster={item.poster}
+                onClick={() => setIndex(ti)}
+              >
+                <source src={item.src} />
+              </video>
+            ) : (
+              <img
+                key={ti}
+                className="gallery-thumb"
+                src={item.src}
+                alt={`thumb ${ti + 1}`}
+                onClick={() => setIndex(ti)}
+              />
+            );
+          })}
+
           <button className="thumb-nav gallery-buttons" onClick={nextSlide}>
-          <img src="../Assets/Galleries/arrow-down.svg" alt="<-" className="back-button-gallery back-previous"></img>
+            <img
+              src="../Assets/Galleries/arrow-down.svg"
+              alt="next"
+              className="back-button-gallery back-previous"
+            />
           </button>
         </div>
 
-        {/* main panel */}
+        {/* Main panel */}
         <div className="gallery-main">
           <div className="gallery-header">
             <div className="gallery-wrapper-top">
-              <div className="gallery-title">
+              <div className="button-and-title-gallery">
                 <button className="gallery-close gallery-buttons" onClick={onClose}>
-                  <img src="../Assets/Galleries/arrow-back.svg" alt="<-" className="back-button-gallery"></img>
+                  <img
+                    src="../Assets/Galleries/arrow-back.svg"
+                    alt="close"
+                    className="back-button-gallery"
+                  />
                 </button>
-                {title}
-                <img className="gallery-icon-svg" src="../Assets/Galleries/gallery-seperator.svg"></img>
+                <div className="gallery-title">
+                  {title}
+                  <img
+                    className="gallery-icon-svg"
+                    src="../Assets/Galleries/gallery-seperator.svg"
+                    alt=""
+                  />
+                </div>
               </div>
               <div className="gallery-date">{date}</div>
             </div>
-            <div className="gallery-wrapper-bottom">
-              {description && (
+            {description && (
+              <div className="gallery-wrapper-bottom">
                 <p className="gallery-description">{description}</p>
-              )}   
-            </div>
+              </div>
+            )}
           </div>
 
           <div className="gallery-content">
-            <img
-              className="gallery-image"
-              src={images[index]}
-              alt={`slide ${index + 1}`}
-            />
+            {media[index].type === "video" ? (
+              <video
+                className="gallery-image"
+                controls
+                autoPlay
+                src={media[index].src}
+                poster={media[index].poster}
+              />
+            ) : (
+              <img
+                className="gallery-image"
+                src={media[index].src}
+                alt={`slide ${index + 1}`}
+              />
+            )}
           </div>
 
           <div className="gallery-counter">
