@@ -39,6 +39,7 @@ const collabData = {
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458200/_DSF2330_1_o3qncp.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458200/_DSF2422_1_ylzlx6.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458198/COVER_1_alq8rw.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749490738/DSC_0850_rqhdr6.jpg"
     ]
   },
   'the-chai-room': {
@@ -57,7 +58,7 @@ const collabData = {
   },
 
   'snap-choreography': {
-    title: 'snap choreography',
+    title:'snap choreography',
     date: 'November 2024',
     description: 'We joined forces with Snap Choreography, founded by Swetha Nair & Alaan Patel, a duo blending dance & creativity since college. For solucky, they guided their team to create stunning choreography, adding a dynamic, vibrant touch to our photos/videos. We’re grateful for their partnership, capturing the essence of movement in Issue #23.e',
     thumbnail: '../Assets/Collabs/collab-1.png',
@@ -81,7 +82,8 @@ const collabData = {
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749459317/_DSC0199-Enhanced-NR_pp5tx3.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749459315/_DSC0217_kgr1cq.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749459313/COVER_rvjvw7.jpg",
-      "https://res.cloudinary.com/dltjxocio/image/upload/v1749459306/IMG_3954_e5x2oj.jpg"
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749459306/IMG_3954_e5x2oj.jpg",
+      "https://res.cloudinary.com/dltjxocio/video/upload/v1749459316/FIRST_4_gke4go.mp4"
     ]
   },
 
@@ -346,6 +348,8 @@ const collabData = {
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458052/LAST_6_zrxhpt.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458052/LAST_5_wu584v.jpg",
       "https://res.cloudinary.com/dltjxocio/image/upload/v1749458051/LAST_8_vi5hq3.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749489996/IMG_9946_1_ish8ho.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749489996/2DF143DA-B4AC-45FE-AED9-F7E38358B013_h4058m.jpg"
     ]
   },
 
