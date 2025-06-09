@@ -3,19 +3,325 @@ import './Collabs.css';
 import Footer from './Footer';
 import Gallery from './Gallery';
 
-const teamBTS_Images = [
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03534.JPG",
-    "/Assets/Galleries/Event-gallery/diwali-event/DSC03554.JPG",
-  ];
+const collabData = {
+  'merazine': {
+    title: 'merazine',
+    date: 'April 2025',
+    description: 'We teamed up with fashion platform Merazine for a contest themed “Corporate Siren”: a bold, office-ready look made for the boardroom & the timeline. Users styled avatars with emerging brand pieces leading with the winner scoring a solucky bundle of 15 thrifted items. This collaboration celebrated dressing with purpose & personality.',
+    thumbnail: '../Assets/Collabs/collab-19.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg"
+    ]
+  },
+  'classic-loot': {
+    title: 'classic Loot',
+    date: 'April 2025',
+    description: 'We collaborated with Classic Loot, a Japantown thrift shop curating unique pieces with/from small businesses. They provided standout clothing, paired with solucky wardrobe items, to create bold & office-ready looks. This collaboration celebrated sustainable fashion while celebrating sustainability, local vendors, & fashion with purpose.',
+    thumbnail: '../Assets/Collabs/collab-20.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+  'the-chai-room': {
+    title: 'the chai room',
+    date: 'March 2025',
+    description: 'To honor Women’s History Month on March 13, 2025, solucky co-hosted an event in Oakland at Kinfolx - a cozy conversation space for South Asian wxmn creatives. Featuring chai, lo-fi music, henna, & curated shopping, the night celebrated community, creativity, and culture.',
+    thumbnail: '../Assets/Collabs/collab-21.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+  'snap-choreography': {
+    title: 'snap choreography',
+    date: 'November 2024',
+    description: 'We joined forces with Snap Choreography, founded by Swetha Nair & Alaan Patel, a duo blending dance & creativity since college. For solucky, they guided their team to create stunning choreography, adding a dynamic, vibrant touch to our photos/videos. We’re grateful for their partnership, capturing the essence of movement in Issue #23.e',
+    thumbnail: '../Assets/Collabs/collab-1.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'tarana': {
+    title: 'tarana',
+    date: 'October 2024',
+    description: ' For our Navaratri Lights shoot in Issue #23, we brought in Tarana, founded by Aishwarya Mathur, Jully Ganatra, & Shruti Kataria. Tarana specializes in tribal Afghani jewelry & handbags, blending tradition with contemporary style. Their pieces, reflecting the vibrant colors & rich heritage of Gujarat, complemented our Navaratri celebration perfectly.',
+    thumbnail: '../Assets/Collabs/collab-2.png',
+    images:[
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+    "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]   
+    },
+
+    'mehendi-by-smriti': {
+    title: 'mehendi by smriti',
+    date: 'October 2024',
+    description: ' For Issue #23, we worked alongside Mehendi by Smriti. With 15+ years of experience, Smriti Panchal brought her artistry to this magazine issue & our Diwali After Dark event. Her intricate designs added cultural depth & beauty to every detail, elevating the magazine issue & showcasing the timeless significance of mehendi in an unforgettable way.',
+    thumbnail: '../Assets/Collabs/collab-3.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'palam': {
+    title: 'palam-colective',
+    date: 'October 2024',
+    description: 'We were thrilled to collaborate with Palam Collective, founded by Keertana Padmanaban, for our 3-in-1 photoshoot showcasing 1 piece styled in 3 different ways. The brand blends South Indian craftsmanship with sustainable fashion, honoring both tradition & contemporary design. Keertana’s dedication to sustainability & heritage made Palam Collective the perfect fit for the shoot.',
+    thumbnail: '../Assets/Collabs/collab-4.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'kaju-studios': {
+    title: 'kaju studios',
+    date: 'October 2024',
+    description: 'In Issue #23, solucky collaborated with Kaju Studios for the Once Upon A Mehendi photoshoot. Founded by Tara & Daivi Patel & inspired by their favorite treat, Kaju Katli, the brand creates versatile jewelry that pairs with both Desi and Western looks, celebrating cultural pride & individuality.',
+    thumbnail: '../Assets/Collabs/collab-5.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'holly': {
+    title: 'holly',
+    date: '',
+    description: '',
+    thumbnail: '../Assets/Collabs/collab-6.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'pearlescent-x-reya': {
+    title: 'pearlescent x reya',
+    date: 'November 2023',
+    description: 'In this magazine issue, we featured a collaboration with Pearlescent & Reya. Manya Patel’s handmade jewelry & Shreya Patel’s bold art brought a chic, artistic touch to our Gossip Girl-themed issue. Manya’s unique pieces add flair to any outfit, while Shreya’s maximalist art, blending fabric & metal, enriches the issue with vibrant visuals.',
+    thumbnail: '../Assets/Collabs/collab-7.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'stax-co-podcast': {
+    title: 'stax co. (podcast)',
+    date: 'December 2023',
+    description: 'Our brand’s journey took center stage in a conversation with Lukas Maciel on the Stax Co. podcast. This interview covered the passion behind our creative pursuits, challenges of running a brand, & exciting future plans. Lukas’s thoughtful interview approach provided a refreshing perspective, valuable insights, & the realities of managing a creative brand.',
+    thumbnail: '../Assets/Collabs/collab-8.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+
+    'stax-co-event': {
+    title: 'stax co. (event)',
+    date: 'December 2023',
+    description: 'Event with Stax Co',
+    thumbnail: '../Assets/Collabs/collab-9.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'evolve-with-fashion': {
+    title: 'evolve with fashion',
+    date: 'November 2023',
+    description: 'From Issue #13 to #19, solucky magazine has collaborated with Alina Jafri, a talented writer who has contributed chic articles on fashion trends, runway shows, & style origins from her fashion blog, Evolve With Fashion. She sees fashion as an art form & personal expression, helping others discover their unique style as a dynamic form of individuality.',
+    thumbnail: '../Assets/Collabs/collab-10.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'casinho-bleu': {
+    title: 'casino bleu',
+    date: 'November 2023',
+    description: 'We teamed up with Stax Co. for a “Heaven or Hell” rager on 11/03 in Downtown San Jose near San Jose State University. The event featured creative costumes, lively dancing, & refreshing drinks, celebrating one of the year’s most exciting holidays. Stax Co., known for blending music, fashion, & immersive experiences, made this inaugural Halloween celebration an unforgettable night, bringing together a spirited crowd & fostering new connections.',
+    thumbnail: '../Assets/Collabs/collab-11.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'too-many-thoughts': {
+    title: 'too many thoughts',
+    date: 'February 2022',
+    description: 'Sanjana Solanki, Founder of solucky, joined Mishal Durae on the Too Many Thoughts podcast to explore the essence of solucky as a creative brand. In this engaging episode, Sanjana shared insights on the brand’s origins, creative inspirations, & future goals. Mishal’s in-depth interviewing style made this conversation a must-listen.',
+    thumbnail: '../Assets/Collabs/collab-12.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'fridays-are-for': {
+    title: 'fridays are for...',
+    date: 'February 2022',
+    description: 'Our Founder, Sanjana Solanki joined Nidhi Gowda on Fridays are For… to share the journey of launching solucky, insights on entrepreneurship, & explored captivating topics. Nidhi, a former NASM Certified Personal Trainer & NYU Economics alum, hosted the episode. Follow the podcast on Instagram for new episodes covering a wide range of topics!',
+    thumbnail: '../Assets/Collabs/collab-13.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'sweetener': {
+    title: 'sweetener',
+    date: 'July 2020',
+    description: 'In this magazine issue, we displayed a collaboration featuring handmade beaded necklaces that sold out on Etsy. Alie Li & Kadie Qi, brand ambassadors, brought their talent & friendship to the project. Liz Heydon, founder of Sweetener Beads, is a fashion enthusiast who believes accessories are key to transforming any outfit with her trendy, unique creations.',
+    thumbnail: '../Assets/Collabs/collab-14.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    't-and-a': {
+    title: 't & a',
+    date: 'May 2021',
+    description: "A Zoom Hip-Hop dance workshop, with $5 entry tickets, raised $170 for Mrs. Najah's Kitchen by Rebuilding Alliance, beating the $130 goal. Led by Twisha Chawla & Alyssa Villareal - lifelong dancers trained in styles ranging from Bollywood to Ballet - the event highlighted their passion for using art to uplift communities & support meaningful causes.",
+    thumbnail: '../Assets/Collabs/collab-15.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'hayeon': {
+    title: 'hayeon',
+    date: 'March 2024',
+    description: 'Our collaboration featured thrifted tees with colorful patchwork designs, all of which sold out due to amazing community support. 10% of proceeds were donated to the Clean Air Task Force. Hayeon Yun blended her passion for sustainability with fashion in this collection, dedicating herself to a climate-conscious lifestyle & supporting small businesses.',
+    thumbnail: '../Assets/Collabs/collab-16.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'k-and-a': {
+    title: 'k & a',
+    date: 'January 2021',
+    description: 'A Bollywood & Hip-Hop fusion dance workshop raised $183 for the Maitri Organization, exceeding the $130 goal, to support women survivors of domestic violence. Kanchan Raju & Alisha Gupta, both longtime dancers passionate about social change, brought movement and meaning together to uplift a vital cause.',
+    thumbnail: '../Assets/Collabs/collab-17.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+    'chrsl': {
+    title: 'chrsl',
+    date: 'November 2020',
+    description: ' From August to November 2020, the brand’s first collaboration featured affordable handmade hair accessories like scrunchies & headscarves. Alisha Gupta, known for her fashion sense & strong online presence, was the perfect ambassador. The entire inventory sold out during Black Friday. Chrisel Pascual, founder of Chrsl crafted each product with love & care.',
+    thumbnail: '../Assets/Collabs/collab-18.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445791/DSC03385_kerfpu.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445790/DSC03396_vjxqhs.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03458_mdgs6w.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445789/DSC03474_n0r9lo.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445788/DSC03455_rijstq.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1749445787/DSC03478_ordqhs.jpg",
+    ]
+  },
+
+};
 
 const Collabs = () =>{
-    const [openGallery, setOpenGallery] = useState(false);
+    const [openGalleryKey, setOpenGalleryKey] = useState(null);
 
     return(
         <div className="collabs-page">
@@ -65,559 +371,33 @@ const Collabs = () =>{
                     <img className="view-archive-svg" src="../Assets/Collabs/view-archive-text.svg"></img>
                 </div>
                 <div className="horizontal-scroll-section-collab">
-
-                    <div className="collab-container">
+                    {Object.entries(collabData).map(([key, { title, thumbnail }]) => (
+                        <div className="collab-container" key={key}>
                         <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-19.png"
-                            alt="merazine"
-                            />
+                            <img className="collab-image" src={thumbnail} alt={title} />
                             <button
                             type="button"
                             className="collab-button"
-                            onClick={() => setOpenGallery(true)}
+                            onClick={() => setOpenGalleryKey(key)}
                             >
                             view
                             </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Merazine"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
                         </div>
-                        <div className="collab-caption">merazine</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-20.png"
-                            alt="classic loot"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Classic Loot"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
+                        <div className="collab-caption">{title}</div>
                         </div>
-                        <div className="collab-caption">classic loot</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-21.png"
-                            alt="the chai room"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="The Chai Room"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">the chai room</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-1.png"
-                            alt="snap choreography"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Snap Choreography"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">snap choreography</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-2.png"
-                            alt="tarana"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Tarana"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">tarana</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-3.png"
-                            alt="tarana"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Mehendi by Smriti"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">mehendi by smriti</div>
-                    </div>
-
-                    
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-4.png"
-                            alt="palam-collective"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Palam-Collective"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">palam-collective</div>
-                    </div>
-
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-5.png"
-                            alt="kaju studios"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Kaju Studios"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">kaju studios</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-6.png"
-                            alt="holly"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Holly"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">holly</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-7.png"
-                            alt="pearlescent x reya"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Pearlescent x Reya"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">pearlescent x reya</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-8.png"
-                            alt="stax co."
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Stax Co. (podcast)"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">stax co. (podcast)</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-9.png"
-                            alt="stax co. (event)"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Stax Co. (event)"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">stax co. (event)</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-10.png"
-                            alt="evolve with fashion"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Evolve with Fashion"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">evolve with fashion</div>
-                    </div>
-
-                
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-11.png"
-                            alt="casino bleu"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Casino Bleu"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">casino bleu</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-12.png"
-                            alt="too many thoughts"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Too Many Thoughts"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">too many thoughts</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-13.png"
-                            alt="fridays are for..."
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Fridays are for..."
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">fridays are for...</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-14.png"
-                            alt="sweetener"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Sweetener"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">sweetener</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-15.png"
-                            alt="t & a"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="T & A"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">t & a</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-16.png"
-                            alt="hayeon"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Hayeon"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">hayeon</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-17.png"
-                            alt="k & a"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="k & a"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">k & a</div>
-                    </div>
-
-                    <div className="collab-container">
-                        <div className="hover-section-collab">
-                            <img
-                            className="collab-image"
-                            src="../Assets/Collabs/collab-18.png"
-                            alt="chrsl"
-                            />
-                            <button
-                            type="button"
-                            className="collab-button"
-                            onClick={() => setOpenGallery(true)}
-                            >
-                            view
-                            </button>
-                            {openGallery && (
-                                <Gallery
-                                title="Chrsl"
-                                date="last updated may 2025"
-                                images={teamBTS_Images}
-                                onClose={() => setOpenGallery(false)}
-                                />
-                            )}
-                        </div>
-                        <div className="collab-caption">chrsl</div>
-                    </div>
-
+                    ))}
                 </div>
             </div>
 
+            {openGalleryKey && (
+                <Gallery
+                title={collabData[openGalleryKey].title}
+                date={collabData[openGalleryKey].date}
+                description={collabData[openGalleryKey].description}
+                images={collabData[openGalleryKey].images}
+                onClose={() => setOpenGalleryKey(null)}
+                />
+            )}
         <Footer/>
         </div>
     )
