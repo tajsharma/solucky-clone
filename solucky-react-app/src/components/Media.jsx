@@ -333,11 +333,30 @@ const mediaData = {
       '../Assets/Large-Content/video8.mp4',
       'https://res.cloudinary.com/dltjxocio/video/upload/v1749524201/FIRST_4_gz8run.mp4',
     ],
-    thumbnail: '',
+    thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749524202/COVER_PHOTO_azqbjg.jpg',
     issue: '24',
   },
 
   'shoot12': {
+    title: 'SPOTTED',
+    date: 'October 2023',
+    description: '',
+    images: [
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '../Assets/Large-Content/video9.mp4',
+      '../Assets/Large-Content/video10.mp4'
+    ],
+    thumbnail: '',
+    issue: '19',
+  },
+
+  'shoot13': {
     title: 'STAY IN MOTION',
     date: 'December 2024',
     description: '',
@@ -354,6 +373,7 @@ const mediaData = {
     thumbnail: '',
     issue: '24',
   },
+
 
 
 
