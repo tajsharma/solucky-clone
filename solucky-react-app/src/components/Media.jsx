@@ -1088,26 +1088,34 @@ const mediaData = {
 },
 
 'shoot35': {
-  title: '',
-  date: '',
+  title: 'DOUBLE TAKE',
+  date: 'December 2024',
   description: '',
   images: [
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749542757/COVER_f62dho.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543172/IMG_1732-Enhanced-NR_f0o68k.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543152/IMG_1594-Enhanced-NR_qag4ik.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543150/IMG_1560-Enhanced-NR_fkpaff.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543147/IMG_1444-Enhanced-NR_mkc5uq.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543145/IMG_1412-Enhanced-NR_ki2ajx.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543142/IMG_1788-Enhanced-NR_wbp4nk.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543140/IMG_1675-Enhanced-NR_j5tque.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543137/IMG_1683-Enhanced-NR_hfmwun.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543135/IMG_1667-Enhanced-NR_siuhdk.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543133/IMG_1499-Enhanced-NR_mmn05p.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543130/IMG_1657-Enhanced-NR_ugilwz.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543129/IMG_1627-Enhanced-NR_t1j5oa.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543126/IMG_1473-Enhanced-NR_kkrgzw.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543123/IMG_1548-Enhanced-NR_bj8y2s.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749543122/IMG_1543-Enhanced-NR_fkvjlx.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749542787/IMG_1414-Enhanced-NR_ykoxm1.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749542775/IMG_1422-Enhanced-NR_kgolhs.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749542772/IMG_1515-Enhanced-NR_tu0tzt.jpg',
+    '../Assets/Large-Content/video16.mp4',
    
   ],
-  thumbnail: '',
-  issue: '',
+  thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749542757/COVER_f62dho.jpg',
+  issue: '20',
 },
 
 'shoot36': {
@@ -1132,6 +1140,31 @@ const mediaData = {
   thumbnail: '',
   issue: '',
 },
+
+'shoot37': {
+  title: '',
+  date: '',
+  description: '',
+  images: [
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+   
+  ],
+  thumbnail: '',
+  issue: '',
+},
+
+
 
 
 
