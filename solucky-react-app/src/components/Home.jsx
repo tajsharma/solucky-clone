@@ -48,25 +48,17 @@ const Home = () =>{
         
             <div className="home-page" style={{ visibility: loading ? "hidden" : "visible" }}>
             {/* ——— Hero (full-section video) ——— */}
-                <section className="hero-section-home">
-                    <div className="hero-image-wrapper">
-                        <img
-                        src="../Assets/Home/hero-image.svg"
-                        alt="hero"
-                        className="hero-bg-image"
-                        />
-                        <div className="tv-video-overlay">
-                        <video
-                            src={randomVideo}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                        />
-                        </div>
-                    </div>
-                </section>
-
+               <section className="hero-section-home">
+                 <video
+                   className="hero-bg-video"
+                   src="../Assets/Large-Content/home-page.mp4"
+                   autoPlay
+                   muted
+                   loop
+                   playsInline
+                   onLoadedData={() => setLoading(false)}  // if you want to dismiss your loader as soon as the video’s ready
+                 />
+               </section>
 
                 <section className="strip-section">
                     <div className="strip-container">
