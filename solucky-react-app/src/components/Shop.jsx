@@ -5,22 +5,31 @@ import Footer from "./Footer";
 
 const Shop = () => {
   const scrollRef = useRef(null);
+  const ITEM_COUNT = 20;
+  const total = ITEM_COUNT * 5;
 
   useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      const el = scrollRef.current;
-      if (!el) return;
+    const el = scrollRef.current;
+    if (!el) return;
 
-      const { scrollLeft, scrollWidth, clientWidth } = el;
-      const maxScrollLeft = scrollWidth - clientWidth;
-      if (maxScrollLeft <= 0) return;
+    // wait until the browser has laid out all children
+    requestAnimationFrame(() => {
+      const totalScrollWidth = el.scrollWidth;
+      const halfScroll = totalScrollWidth / 2;
+      const speedPxPerTick = 50;      // pixels per interval
+      const intervalMs = 20;         // ~60fps
 
-      // advance by 90px, then wrap back around once we hit the end
-      const next = scrollLeft + 90;
-      el.scrollLeft = next > maxScrollLeft ? next - maxScrollLeft : next;
-    }, 400);
+      const id = setInterval(() => {
+        // advance
+        el.scrollLeft += speedPxPerTick;
+        // if we've gone past the first copy, jump back
+        if (el.scrollLeft >= halfScroll) {
+          el.scrollLeft -= halfScroll;
+        }
+      }, intervalMs);
 
-    return () => clearInterval(scrollInterval);
+      return () => clearInterval(id);
+    });
   }, []);
 
   return (
@@ -49,11 +58,17 @@ const Shop = () => {
           <img src="/Assets/Shop/photographer-tag.svg" className="photographer-tag" alt="photographer tag ->" />
         </div>
         <div className="horizontal-scroll-section cutout-gallery" ref={scrollRef}>
-          {[...Array(20)].map((_, i) => (
-            <div key={i} className="cutout-item">
-              <img src={`Assets/Shop/cutout${i + 1}.png`} alt={`cutout-${i + 1}`} />
-            </div>
-          ))}
+          {Array.from({ length: total }).map((_, i) => {
+            const idx = (i % ITEM_COUNT) + 1;
+            return (
+              <div key={i} className="cutout-item">
+                <img
+                  src={`/Assets/Shop/cutout${idx}.png`}
+                  alt={`cutout-${idx}`}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
 
