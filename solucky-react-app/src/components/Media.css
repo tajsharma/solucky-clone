@@ -243,6 +243,7 @@ height: 75%;
       width: 95vw;
       padding-top: 50px;
       align-items: center;
+      gap: 50px;
     }
 
     .small-screen-card {
@@ -270,6 +271,22 @@ height: 75%;
     .alt-interact-text-wrapper{
       display: flex;
       width: 95vw;
+    }
+
+    .small-screen-text-container{
+      display: flex;
+      color: #F5F5F5;
+      justify-content: space-between;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.447px;
+      text-transform: capitalize;
+      margin-top: 8px;
+      align-self: start
     }
   }
 
@@ -355,6 +372,9 @@ height: 75%;
 
   .alt-media-arrow-svg{
     width: 50vw;
+  }
+  .small-screen-text-container{
+    font-size: 14px;
   }
 
   }

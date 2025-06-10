@@ -604,8 +604,10 @@ const Media = () => {
                         alt={title}
                         className="small-screen-thumb"
                         />
-                        <div className="small-screen-title">{title}</div>
-                        <div className="small-screen-issue">Issue {issue}</div>
+                        <div className="small-screen-text-container">
+                            <div className="small-screen-title">{title}</div>
+                            <div className="small-screen-issue">Issue {issue}</div>                            
+                        </div>
                     </div>
                 ))}
             </div>
