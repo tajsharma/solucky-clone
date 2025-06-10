@@ -123,7 +123,7 @@ const Magazine = () =>{
                     <img className="magazine-picture" src="../Assets/Magazine/cover22.png" alt="mag22"></img>
                     <img className="hover-picture" src="../Assets/Magazine/hover22.png" alt="hov22"></img>
                 </div>
-                <div className="cover-box" id="magazine-21" onClick={() => setActiveIssue(1)} style={{ cursor: "pointer" }}>
+                <div className="cover-box" id="magazine-21" onClick={() => setActiveIssue(21)} style={{ cursor: "pointer" }}>
                     <img className="magazine-picture" src="../Assets/Magazine/cover21.png" alt="mag21"></img>
                     <img className="hover-picture" src="../Assets/Magazine/hover21.png" alt="hov21"></img>
                 </div>
