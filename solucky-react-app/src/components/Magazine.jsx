@@ -56,19 +56,19 @@ const Magazine = () =>{
                 </div>
                 <div className="info-buttons-section">
                     <div className="buttons-container">
-                        <a className="button-1" href="">
+                        <a className="button-1" href="https://docs.google.com/forms/d/e/1FAIpQLSfmkJhfxa21u6Ra73YU7w1e-ue28Lu_aCw-9ra_geHn6Ibn3g/viewform">
                             <button className="magazine-button">
                                 <p className="centered-p-bai-jamjuree">subscribe to <i>solucky</i> magazine</p>
                                 <img className="button-arrow" src="../Assets/Icons/shop-arrow.png" alt="arrow"></img>
                             </button>
                         </a>
-                        <a  className="button-2" href="">
+                        <a  className="button-2" href="/media">
                             <button className="magazine-button">
                                 <p className="centered-p-bai-jamjuree">view all magazine media</p>
                                 <img className="button-arrow" src="../Assets/Icons/shop-arrow.png" alt="arrow"></img>
                             </button>
                         </a>
-                        <a className="button-3" href="">
+                        <a className="button-3" href="https://docs.google.com/forms/d/e/1FAIpQLSe81g9uPNPingKHngREZ5MpHuUFtI-zXEeOLqVayNIC6Ba2Sg/viewform">
                             <button className="magazine-button">
                                 <p className="centered-p-bai-jamjuree">join the <i>solucky</i> team</p>
                                 <img className="button-arrow" src="../Assets/Icons/shop-arrow.png" alt="arrow"></img>
