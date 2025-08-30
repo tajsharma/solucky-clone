@@ -205,6 +205,14 @@
   cursor: pointer;
 }
 
+.covers-container{
+    display: flex;
+    flex-wrap: wrap;            /* allow wrapping to next row */
+    justify-content: start;
+    gap: 24px;     
+    width: 1376px;             
+}
+
 
 @media screen and (max-width: 1880px){
     .right-sticky-picture{
@@ -242,9 +250,13 @@
     }
 
     .cover-hover-section{
-        gap: 16px;
         width: 100vw;
     }
+
+    .covers-container{
+                
+    }
+
 }
 
 
@@ -261,6 +273,10 @@
 
     .magazine-para-text{
         font-size: 21px;
+    }
+
+    .covers-container{
+        width: 1030px;             
     }
 }
 
@@ -317,6 +333,10 @@
         width: 300px;
     }
 
+    .covers-container{
+        width: 680px;             
+    }
+
 }
 
 @media screen and (max-width:970px){
@@ -364,6 +384,12 @@
 }
 
 
+@media screen and (max-width:680px){
+    .covers-container{
+        width: 330px;
+    }
+}
+
 @media screen and (max-width:600px){
     .right-sticky-picture {
         width: 65vw;
@@ -390,5 +416,13 @@
     .info-buttons-section {
         padding-top: 88px;
         padding-bottom: 124px;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    .covers-container{
+        width: 190px;
     }
 }
