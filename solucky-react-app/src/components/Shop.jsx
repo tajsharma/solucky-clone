@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const Shop = () => {
   const scrollRef = useRef(null);
   const ITEM_COUNT = 20;
-  const total = ITEM_COUNT * 5;
+  const total = ITEM_COUNT * 10;
 
   useEffect(() => {
     const el = scrollRef.current;
