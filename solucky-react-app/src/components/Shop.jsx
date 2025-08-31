@@ -16,8 +16,8 @@ const Shop = () => {
     requestAnimationFrame(() => {
       const totalScrollWidth = el.scrollWidth;
       const halfScroll = totalScrollWidth / 2;
-      const speedPxPerTick = 50;      // pixels per interval
-      const intervalMs = 20;         // ~60fps
+      const speedPxPerTick = 80;      // pixels per interval
+      const intervalMs = 25;         // ~60fps
 
       const id = setInterval(() => {
         // advance
