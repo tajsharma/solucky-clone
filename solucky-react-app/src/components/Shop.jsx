@@ -98,8 +98,7 @@ const Shop = () => {
           <p>
             Browse our inventory through the <span className="shop-info-para-bold">“solucky store”</span> highlight on 
             <span className="shop-info-para-bold"> Instagram</span> or at occasional <span className="shop-info-para-bold">in-person</span> events. 
-            Each curated selection features themes like European Summer, Y2K, 90s Casting Call, & more. Enjoy <span className="shop-info-para-bold">free shipping </span>
-            on
+            Each curated selection features themes like European Summer, Y2K, 90s Casting Call, & more. Enjoy <span className="shop-info-para-bold">free shipping on </span>
             <span className="shop-info-para-bold">orders over $20</span> (additional fees apply for shipping outside California).
           </p>
         </div>
