@@ -721,6 +721,8 @@ const mediaData = {
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749548705/COVER_gbrews.jpg',
   issue: '19',
+  } ,
+  
 
     
   'shoot3': {
@@ -1525,12 +1527,9 @@ const mediaData = {
     thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749525828/COVER_w9zoeo.jpg',
     issue: '1',
   },
-},
+}
 
 
-
-
-};
 
 
 const Media = () => {
