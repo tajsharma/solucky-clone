@@ -187,6 +187,13 @@ height: 75%;
   align-self: start;
 }
 
+.small-screen-title{
+  text-align: left;
+}
+
+.small-screen-issue{
+  text-align: right;
+}
 
   @media screen and (min-width:1880px){
     .media-arrow-svg{
