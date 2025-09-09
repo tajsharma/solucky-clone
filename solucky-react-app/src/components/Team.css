@@ -675,6 +675,11 @@ text-align: center;
 
 
 @media screen and (max-width:460px){
+
+    .main-team-card{
+        margin-top: 0px;
+    }
+    
     .hero-title-container{
         margin-top: 15rem;
     }
@@ -690,11 +695,6 @@ text-align: center;
     .team-category{
         margin-top: 0px;
     }
-
-    #first-insta-section{
-        margin-top: 150px;
-    }
-
     .scroll-left,
     .scroll-right{
         display: none;
