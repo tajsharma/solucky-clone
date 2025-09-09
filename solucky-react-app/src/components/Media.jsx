@@ -90,8 +90,8 @@ const mediaData = {
     date: 'December 2024',
     description: '',
     images: [
-      '../Assets/Large-Content/COVER-PHOTO.jpg',
       'https://res.cloudinary.com/dltjxocio/video/upload/v1749519382/FIRST_3_fvvupl.mp4',
+      '../Assets/Large-Content/COVER-PHOTO.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749519412/_DSC0293-Enhanced-NR_bpmkbg.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749519385/_DSC0149-Enhanced-NR_nnzekj.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749519395/_DSC0567-Enhanced-NR_tz0uch.jpg',
@@ -137,6 +137,7 @@ const mediaData = {
   date: 'December 2024',
   description: '',
   images: [
+    'https://res.cloudinary.com/dltjxocio/video/upload/v1749541753/FIRST_3_yb4tn5.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541752/COVER_tnccy1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541753/IMG_3926_anj22q.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541755/OFFICAL_PART_2_temoeu.jpg',
@@ -178,7 +179,6 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541829/IMG_2472-Enhanced-NR_ji1dzl.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541831/IMG_2453-Enhanced-NR_zprham.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541832/IMG_2224-Enhanced-NR_d6kmwm.jpg',
-    'https://res.cloudinary.com/dltjxocio/video/upload/v1749541753/FIRST_3_yb4tn5.mp4',
     '../Assets/Large-Content/video15.mp4',
     '../Assets/Large-Content/video16.mp4',
    
@@ -194,6 +194,7 @@ const mediaData = {
     date: 'December 2024',
     description: '',
     images: [
+      'https://res.cloudinary.com/dltjxocio/video/upload/v1749524201/FIRST_4_gz8run.mp4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749524232/3X1A6777_rvombr.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749524230/3X1A6828_rxgclr.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749524228/3X1A6739_s8xnpx.jpg',
@@ -216,7 +217,6 @@ const mediaData = {
       '../Assets/Large-Content/video6.mp4',
       '../Assets/Large-Content/video7.mp4',
       '../Assets/Large-Content/video8.mp4',
-      'https://res.cloudinary.com/dltjxocio/video/upload/v1749524201/FIRST_4_gz8run.mp4',
     ],
     thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749524202/COVER_PHOTO_azqbjg.jpg',
     issue: '24',
@@ -227,6 +227,7 @@ const mediaData = {
     date: 'October 2024',
     description: '',
     images: [
+      '../Assets/Large-Content/video11.mp4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526077/COVER_kvwgdy.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526087/DSC_0339_vlhgsk.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526092/IMG_5962_y2xoja.jpg',
@@ -265,7 +266,6 @@ const mediaData = {
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526470/DSC_0663_ipsm9c.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526472/DSC_0692_weiizq.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526475/DSC_0885_t3ylhc.jpg',
-      '../Assets/Large-Content/video11.mp4',
     ],
     thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749526077/COVER_kvwgdy.jpg',
     issue: '23',
@@ -277,6 +277,7 @@ const mediaData = {
   date: 'October 2024',
   description: '',
   images: [
+    'https://res.cloudinary.com/dltjxocio/video/upload/v1749532453/FIRST_1_gymnhe.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532474/COVER_qlwkh1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532524/DSC_2236_gio5jk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532514/DSC_2485_pyopbw.jpg',
@@ -346,8 +347,7 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532456/IMG_3334_spbxfn.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532481/_DSC0307_p6shbt.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532479/_DSC0697-Enhanced-NR_jibnoz.jpg',
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749532452/IMG_2951_k796vn.jpg',
-    'https://res.cloudinary.com/dltjxocio/video/upload/v1749532453/FIRST_1_gymnhe.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749532452/IMG_2951_k796vn.jpg'
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749532474/COVER_qlwkh1.jpg',
   issue: '23',
@@ -360,9 +360,9 @@ const mediaData = {
   date: 'October 2024',
   description: '',
   images: [
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749534126/COVER_PHOTO_1_cwdghq.jpg',
-    'https://res.cloudinary.com/dltjxocio/video/upload/v1749534126/0609_1_x8hdyf.mp4',
     '../Assets/Large-Content/video14.mp4',
+    'https://res.cloudinary.com/dltjxocio/video/upload/v1749534126/0609_1_x8hdyf.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749534126/COVER_PHOTO_1_cwdghq.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749534127/_DSC0389-Enhanced-NR_jk2xlk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749534132/_DSC0280-Enhanced-NR-2_ekregp.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749534176/_DSC0369-Enhanced-NR-2_klm0kg.jpg',
@@ -443,6 +443,7 @@ const mediaData = {
   date: 'July 2024',
   description: '',
   images: [
+    '../Assets/Large-Content/video5.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523460/COVER_hsowqh.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523469/IMG_5666_ln6qre.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523467/IMG_5545_diusij.jpg',
@@ -457,8 +458,7 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523456/IMG_5540_zpd0hz.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523455/IMG_5519_tctt5k.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523453/IMG_5516_mdfrfo.jpg',
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749523452/IMG_3954_njyjha.jpg',
-    '../Assets/Large-Content/video5.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749523452/IMG_3954_njyjha.jpg'
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749523460/COVER_hsowqh.jpg',
   issue: '22',
@@ -470,6 +470,7 @@ const mediaData = {
   date: 'July 2024',
   description: '',
   images: [
+    'https://res.cloudinary.com/dltjxocio/video/upload/v1749518357/FIRST_rwppni.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518418/COVER_yjsypc.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518420/COVER_PHOTO_r6wmq1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518432/IMG_5320-Enhanced-NR_mtmmjn.jpg',
@@ -490,7 +491,6 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518410/foramrutha10_deiuqj.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518409/foramrutha12_l39wcd.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518358/foramrutha13_rlp7kl.jpg',
-    'https://res.cloudinary.com/dltjxocio/video/upload/v1749518357/FIRST_rwppni.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518357/foramrutha14_thisoneiquestion_nikwua.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518356/greenbohemiantest2_zzn2na.jpg',
   ],
@@ -505,6 +505,7 @@ const mediaData = {
   date: 'April 2024',
   description: '',
   images: [
+    '../Assets/Large-Content/video18.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544299/COVER_moc4tg.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544301/IMG_2801_mi0qxz.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544304/IMG_2813_dnsbuu.jpg',
@@ -529,8 +530,6 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544359/IMG_3110_c7ptqy.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544362/IMG_3107_ponczy.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544365/IMG_3133_jtxgu1.jpg',
-    '../Assets/Large-Content/video18.mp4',
-   
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749544299/COVER_moc4tg.jpg',
   issue: '21',
@@ -541,8 +540,8 @@ const mediaData = {
   date: 'April 2024',
   description: '',
   images: [
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749536880/COVER_ij0k5n.jpg',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749536879/FIRST_1_phpd5e.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749536880/COVER_ij0k5n.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749536898/IMG_4732_pxnaud.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749536896/IMG_4737_wzep6m.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749536896/IMG_4735_rwwwgi.jpg',
@@ -603,6 +602,7 @@ const mediaData = {
   date: 'December 2024',
   description: '',
   images: [
+    '../Assets/Large-Content/video16.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749542757/COVER_f62dho.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749543172/IMG_1732-Enhanced-NR_f0o68k.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749543152/IMG_1594-Enhanced-NR_qag4ik.jpg',
@@ -622,8 +622,6 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749542787/IMG_1414-Enhanced-NR_ykoxm1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749542775/IMG_1422-Enhanced-NR_kgolhs.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749542772/IMG_1515-Enhanced-NR_tu0tzt.jpg',
-    '../Assets/Large-Content/video16.mp4',
-   
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749542757/COVER_f62dho.jpg',
   issue: '20',
@@ -634,6 +632,7 @@ const mediaData = {
   date: 'January 2024',
   description: '',
   images: [
+    '../Assets/Large-Content/video13.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532059/COVER_uns9wh.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532059/IMG_0033_vo79pg.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532060/IMG_0059_gq1ynn.jpg',
@@ -655,7 +654,6 @@ const mediaData = {
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532072/IMG_9873_oc8snz.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532072/IMG_9915_agczvk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532073/IMG_9877_d3x7k8.jpg',
-    '../Assets/Large-Content/video13.mp4',
   ],
   thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749532059/COVER_uns9wh.jpg',
   issue: '20',
@@ -666,10 +664,10 @@ const mediaData = {
   date: 'March 2024',
   description: '',
   images: [
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749522287/COVER_hsrung.jpg',
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749522291/IMG_0895_d5j4jo.jpg',
     '../Assets/Large-Content/video3.mp4',
     '../Assets/Large-Content/video4.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749522287/COVER_hsrung.jpg',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749522291/IMG_0895_d5j4jo.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749522291/IMG_0546_rw6lqs.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749522290/IMG_0919_hly8e8.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749522289/IMG_0300_crpudc.jpg',
@@ -762,6 +760,8 @@ const mediaData = {
     date: 'October 2023',
     description: '',
     images: [
+      '../Assets/Large-Content/video9.mp4',
+      '../Assets/Large-Content/video10.mp4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525369/COVER_brnavc.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525375/IMG_5207_avmxa1.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525373/IMG_5199_m3fbmv.jpg',
@@ -778,8 +778,6 @@ const mediaData = {
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525348/IMG_5093_ktt4te.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525345/IMG_5091_rzufzi.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525344/IMG_5077_jh5qml.jpg',
-      '../Assets/Large-Content/video9.mp4',
-      '../Assets/Large-Content/video10.mp4'
     ],
     thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749525369/COVER_brnavc.jpg',
     issue: '19',
@@ -790,10 +788,10 @@ const mediaData = {
   date: 'October 2023',
   description: '',
   images: [
-    'https://res.cloudinary.com/dltjxocio/image/upload/v1749537696/COVER_o6rwh5.jpg',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749537249/FIRST_1_cljliw.mp4',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749537250/FIRST_2_osrp8v.mp4',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749537251/FIRST_3_u3wcrj.mp4',
+    'https://res.cloudinary.com/dltjxocio/image/upload/v1749537696/COVER_o6rwh5.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749537720/IMG_5735_rcefo0.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749537721/IMG_5747_dj29dh.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749537722/IMG_5749_wpx1el.jpg',
@@ -822,6 +820,7 @@ const mediaData = {
     date: 'July 2023',
     description: '',
     images: [
+      '../Assets/Large-Content/video12.MP4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529816/COVER_gawlae.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529807/IMG_2461_cvo0r6.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529808/IMG_2463_fcmmto.jpg',
@@ -848,7 +847,6 @@ const mediaData = {
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529949/IMG_2602_jkxctg.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529950/IMG_2608_t80ovq.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529952/IMG_4959_oxvxm8.jpg',
-      '../Assets/Large-Content/video12.MP4',
     ],
     thumbnail: 'https://res.cloudinary.com/dltjxocio/image/upload/v1749529816/COVER_gawlae.jpg',
     issue: '18',
