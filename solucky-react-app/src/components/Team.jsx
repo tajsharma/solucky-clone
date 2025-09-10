@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
 import './Team.css'
 import Gallery from './Gallery';
@@ -444,6 +444,16 @@ const teamBTS_Images = [
 
 const Team = () =>{
     const [openGallery, setOpenGallery] = useState(false);
+
+    useEffect(() => {
+        // Apply offset only on small screens
+        if (window.innerWidth <= 768) {
+          const sections = document.querySelectorAll('.team-horizontal-scroll-section');
+          sections.forEach(section => {
+            section.scrollLeft = 44; // adjust pixels as needed
+          });
+        }
+      }, []);
 
     const scrollLeft = (sectionClass) => {
         const container = document.querySelector(`.${sectionClass}`);
