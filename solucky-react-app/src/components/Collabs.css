@@ -136,6 +136,15 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out, background-color 0.3s;
   }
+
+  .collab-bold-email{
+    line-height: 0px;
+  }
+
+  .collab-email-caption{
+    margin: 0px;
+    text-indent: 0px;
+  }
   
   /* darken on hover and show button */
   .hover-section-collab:hover .collab-image {
