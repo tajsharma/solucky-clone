@@ -1,5 +1,4 @@
-// src/components/About.jsx
-import React, {useState} from 'react';
+import React, { useState, useMemo } from 'react';
 import Footer from './Footer';
 import Gallery from './Gallery';
 import './About.css';
@@ -98,9 +97,19 @@ const aboutImages = [
   "https://res.cloudinary.com/dltjxocio/video/upload/v1749499702/SAM_1580_vbofmo.mp4"
 ];
 
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
 const About = () => {
   const [openGallery, setOpenGallery] = useState(false);
+
+  const randomizedImages = useMemo(() => shuffleArray(aboutImages), []);
 
   return (
     <>
@@ -141,9 +150,9 @@ const About = () => {
           </button>
             {openGallery && (
               <Gallery
-                title="Behind the Scenes"
+                title="Family & Friends"
                 date="last updated may 2025"
-                images={aboutImages}
+                images={randomizedImages}
                 onClose={() => setOpenGallery(false)}
               />
             )}
