@@ -10,6 +10,7 @@ const mediaData = {
   title: 'IN OFFICE',
   date: 'Winter 2025',
   description: '',
+  credits:"Collaboration Partner: Classic Loot Creative Director: Sanjana Solanki, Producer: Shayari Saha, Creative Operations: Jeanna Thottungal, Stylists: Veda Gottumukkala + JJ Manchenella + Saajay Singh Models: Prizzy Belle + Sahiti Bobbala + Aminah Manning + Shayari Saha  + Sanjana Solanki + Christina Yu Videographer: Amrutha Gururaja + Elijah Sanders Photographer + Photo Editor: Joshua Merricks Photoshoot Assistants:Amrutha Gururaja +  JJ Manchenella + Elijah Sanders BTS Photographer/Videographer: Amrutha Gururaja",
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538413/COVER_zsutxb.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538416/COVER_atrhzf.jpg',
@@ -1610,6 +1611,7 @@ const Media = () => {
                 title={mediaData[openMediaKey].title}
                 date={mediaData[openMediaKey].date}
                 description={mediaData[openMediaKey].description}
+                credits={mediaData[openMediaKey].credits}
                 images={mediaData[openMediaKey].images}
                 onClose={() => setOpenMediaKey(null)}
                 />

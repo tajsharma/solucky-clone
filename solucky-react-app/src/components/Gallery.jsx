@@ -1,3 +1,4 @@
+// Gallery.jsx
 import React, { useState } from "react";
 import "./Gallery.css";
 
@@ -5,12 +6,12 @@ export default function Gallery({
   title,
   date,
   description,
-  images,   // still using images[], but now can contain video URLs too
+  credits,   // <-- NEW
+  images,
   onClose,
 }) {
   const [index, setIndex] = useState(0);
 
-  // 1) Normalize every entry to { type, src, poster? }
   const media = images.map((item) => {
     if (typeof item === "string") {
       const ext = item.split("?")[0].split(".").pop().toLowerCase();
@@ -20,21 +21,22 @@ export default function Gallery({
         return { type: "image", src: item };
       }
     }
-    // if you pass { type, src, poster } objects, we honor them directly
     return item;
   });
 
   const total = media.length;
-
   const prevSlide = () => setIndex((i) => (i - 1 + total) % total);
   const nextSlide = () => setIndex((i) => (i + 1) % total);
-
   const thumbs = [1, 2, 3].map((off) => (index + off) % total);
+
+  // helper to render credits consistently
+  const hasCredits =
+    (Array.isArray(credits) && credits.length > 0) ||
+    (typeof credits === "string" && credits.trim().length > 0);
 
   return (
     <div className="gallery-overlay">
       <div className="gallery-container">
-
         {/* Sidebar thumbnails/nav */}
         <div className="gallery-sidebar">
           <button className="thumb-nav gallery-buttons" onClick={prevSlide}>
@@ -100,6 +102,21 @@ export default function Gallery({
               </div>
               <div className="gallery-date">{date}</div>
             </div>
+
+            {/* NEW: Credits section (above description) */}
+            {hasCredits && (
+              <div className="gallery-credits">
+                <span className="gallery-credits-label">Credits</span>
+                {Array.isArray(credits) ? (
+                  <p className="gallery-credits-list">
+                    {credits.join(" • ")}
+                  </p>
+                ) : (
+                  <p className="gallery-credits-list">{credits}</p>
+                )}
+              </div>
+            )}
+
             {description && (
               <div className="gallery-wrapper-bottom">
                 <p className="gallery-description">{description}</p>

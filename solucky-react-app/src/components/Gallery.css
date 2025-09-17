@@ -144,11 +144,35 @@
 .gallery-description{
   color: #030303;
   font-family: "Bai Jamjuree";
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
+/* Credits block sits above description */
+.gallery-credits {
+  margin: 8px 0 12px 0;
+}
+
+.gallery-credits-label {
+  display: inline-block;
+  font-family: "Bai Jamjuree";
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #030303;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.gallery-credits-list {
+  color: #030303;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  line-height: 1.35;
+}
+
 
 /* 7. Content area: center + hide overflow */
 .gallery-content {
@@ -238,10 +262,15 @@
   }
 
   .gallery-description{
-    font-size: 14px;
+    font-size: 12px;
   }
 
+  .gallery-credits-label{ font-size: 12px; }
+  .gallery-credits-list { font-size: 14px; }
 }
+
+
+
 
 @media screen and (max-width:850px){ 
 
