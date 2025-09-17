@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './Home.css'
 import sep from "./src-assets/four-leaf-clover.png";
 import Footer from "./Footer";
@@ -25,40 +25,77 @@ const Home = () =>{
     ];
 
     const randomVideo = videoOptions[Math.floor(Math.random() * videoOptions.length)];
-
     const [loading, setLoading] = useState(true);
-
+  
+    const loadingVidRef = useRef(null);
+    const heroVidRef   = useRef(null);
+  
+    // Try to play a video element; retry on canplay, and add a one-time user-gesture fallback.
+    const tryPlay = (videoEl) => {
+      if (!videoEl) return;
+      videoEl.muted = true;           // extra-safe for iOS
+      const attempt = () =>
+        videoEl.play().catch(() => {/* ignore; we’ll use fallback */});
+  
+      attempt();
+  
+      // If the browser needs data first, try again when it can play.
+      const onCanPlay = () => attempt();
+      videoEl.addEventListener("canplay", onCanPlay, { once: true });
+  
+      // Gesture fallback (only if autoplay was blocked).
+      const onFirstTouch = () => {
+        attempt();
+        document.removeEventListener("touchend", onFirstTouch);
+        document.removeEventListener("click", onFirstTouch);
+      };
+      document.addEventListener("touchend", onFirstTouch, { once: true });
+      document.addEventListener("click", onFirstTouch, { once: true });
+    };
+  
     useEffect(() => {
-        document.body.classList.toggle("loading", loading);
+      document.body.classList.toggle("loading", loading);
     }, [loading]);
+  
+    useEffect(() => {
+      // Kick both videos as soon as they mount
+      tryPlay(loadingVidRef.current);
+      tryPlay(heroVidRef.current);
+    }, []);
+
+
     return (
         <>
-              {loading && (
-                    <div className="loading-overlay">
-                    <video
-                        className="loading-video"
-                        src="/Assets/Home/loading-screen.mp4"
-                        autoPlay
-                        muted
-                        playsInline
-                        onEnded={() => setLoading(false)}
-                    />
-                    </div>
-                )}
-        
-            <div className="home-page" style={{ visibility: loading ? "hidden" : "visible" }}>
+        {loading && (
+            <div className="loading-overlay">
+              <video
+                ref={loadingVidRef}
+                className="loading-video"
+                src="/Assets/Home/loading-screen.mp4"
+                autoPlay
+                muted
+                playsInline          // iOS inline playback
+                preload="auto"       // encourage buffering
+                onEnded={() => setLoading(false)}
+              />
+            </div>
+          )}
+    
+          <div className="home-page" style={{ visibility: loading ? "hidden" : "visible" }}>
             {/* ——— Hero (full-section video) ——— */}
-               <section className="hero-section-home">
-                 <video
-                   className="hero-bg-video"
-                   src="../Assets/Large-Content/home-page.mp4"
-                   autoPlay
-                   muted
-                   loop
-                   playsInline
-                   onLoadedData={() => setLoading(false)}  // if you want to dismiss your loader as soon as the video’s ready
-                 />
-               </section>
+            <section className="hero-section-home">
+              <video
+                ref={heroVidRef}
+                className="hero-bg-video"
+                src="../Assets/Large-Content/home-page.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                onLoadedData={() => setLoading(false)}
+              />
+            </section>
 
                 <section className="strip-section">
                     <div className="strip-container">
