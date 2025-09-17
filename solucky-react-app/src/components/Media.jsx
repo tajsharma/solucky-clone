@@ -10,7 +10,7 @@ const mediaData = {
   title: 'IN OFFICE',
   date: 'Winter 2025',
   description: '',
-  credits:"Collaboration Partner: Classic Loot Creative Director: Sanjana Solanki, Producer: Shayari Saha, Creative Operations: Jeanna Thottungal, Stylists: Veda Gottumukkala + JJ Manchenella + Saajay Singh Models: Prizzy Belle + Sahiti Bobbala + Aminah Manning + Shayari Saha  + Sanjana Solanki + Christina Yu Videographer: Amrutha Gururaja + Elijah Sanders Photographer + Photo Editor: Joshua Merricks Photoshoot Assistants:Amrutha Gururaja +  JJ Manchenella + Elijah Sanders BTS Photographer/Videographer: Amrutha Gururaja",
+  credits:"Classic Loot, Sanjana Solanki, Shayari Saha, Jeanna Thottungal, Veda Gottumukkala, JJ Manchenella, Saajay Singh, Prizzy Belle, Sahiti Bobbala, Aminah Manning, Christina Yu, Amrutha Gururaja, Elijah Sanders, Joshua Merricks ",
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538413/COVER_zsutxb.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538416/COVER_atrhzf.jpg',
@@ -48,7 +48,7 @@ const mediaData = {
 'shoot39': {
   title: 'COFFEE RUN',
   date: 'WINTER 2025',
-  description: '',
+  credits:"Classic Loot, Sanjana Solanki, Shayari Saha, Jeanna Thottungal, Donya Mirzazadeh, Veda Gottumukkala, Henna Bath, Mikaila Bramlette, Priya Goel, Juwan Madaki, Julian Caballero, Amrutha Gururaja, Arpitha Sundararajan, Katean Tolentino ",
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544956/COVER_qyuoix.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544950/IMG_4832_hlkqca.jpg',
@@ -90,6 +90,7 @@ const mediaData = {
     title: 'THE BAY AREA COLLECTIVE',
     date: 'December 2024',
     description: '',
+    credits:"Sanjana Solanki, Anuja Pandit, Shayari Saha, Jeanna Thottungal, JJ Manchenella, Jerald Balot, Twisha Chawla, Natasha Chodavarapu, Charles Merrill-Daniels, Karthik Gorla, Mia Juni, Gaurav Deshmukh, Hugo Carlsson, Matthew Tran, Vaibhavi Jhawar, Julian Caballero, Samrat Ghosh ",
     images: [
       'https://res.cloudinary.com/dltjxocio/video/upload/v1749519382/FIRST_3_fvvupl.mp4',
       '../Assets/Large-Content/COVER-PHOTO.jpg',
@@ -137,6 +138,7 @@ const mediaData = {
   title: 'EYES ON THE ROAD',
   date: 'December 2024',
   description: '',
+  credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Jeanna Thottungal, JJ Manchenella, Jerald Balot, Twisha Chawla, Natasha Chodavarapu, Charles Merrill-Daniels, Karthik Gorla, Mia Juni, Gaurav Deshmukh, Hugo Carlsson, Matthew Tran, Vaibhavi Jhawar, Julian Caballero, Samrat Ghosh', 
   images: [
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749541753/FIRST_3_yb4tn5.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541752/COVER_tnccy1.jpg',
@@ -194,6 +196,7 @@ const mediaData = {
     title: 'STAY IN MOTION',
     date: 'December 2024',
     description: '',
+    credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Jeanna Thottungal, Saajay Singh, Brandon Bosch, Daelynn Castillo Delgado, Rishi Guha, Trista Lenford-Norrie, Hugo Carlsson, Matthew Tran, Julian Caballero, Samrat Ghosh', 
     images: [
       'https://res.cloudinary.com/dltjxocio/video/upload/v1749524201/FIRST_4_gz8run.mp4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749524232/3X1A6777_rvombr.jpg',
@@ -227,6 +230,7 @@ const mediaData = {
     title: ' SARI UNDER THE SEA',
     date: 'October 2024',
     description: '',
+    credits: 'Snap Choreography, Sanjana Solanki, Shayari Saha, JJ Manchenella, Donya Mirzazdeh, Karthik Punati, Rishi Boddhu, Benecia Jude Jose, Sejal Kargal, Meghana Vysyaraju, Aldo Plascenia, Matthew Tran, Julian Caballero, Arpitha Sundararajan, Alaan Patel', 
     images: [
       '../Assets/Large-Content/video11.mp4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526077/COVER_kvwgdy.jpg',
@@ -276,7 +280,7 @@ const mediaData = {
   'shoot21': {
   title: 'ONCE UPON A MEHENDI',
   date: 'October 2024',
-  description: '',
+  description: 'Kaju Studios, Mehendi By Smriti, Snap Choreography, Sanjana Solanki, Shayari Saha, Jeanna Thottungal, Veda Gottumukkala, JJ Manchenella, Donya Mirzazadeh, Karthik Punati, Saajay Singh, Ria Lakkimsetti, Smriti Panchal, Harnoor Dhaliwal, Bhupinder Kaur, Inika Mehra, Ruhika Nandy, Neha Ramakrishnan, Neha Ramesh, Tanvi Singh, Husan Toor, Rianna Christy, Roshini Gopala, Shreya Kamath, Devika Kumar, Lavanya Joshi, Swetha Nair, Alaan Patel, Khushi Patel, Ashna Pattanayak, Sanjana Parikh, Shruti Shah, Ananya Verma, Bhanu Upadhyayula, Hugo Carlsson, Lukas Maciel, Matthew Tran, Vaibhavi Jhawar, Vibha Shivarajan, Radhika Bhavsar, Baban Gahunia, Samrat Ghosh',
   images: [
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749532453/FIRST_1_gymnhe.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532474/COVER_qlwkh1.jpg',
@@ -360,6 +364,7 @@ const mediaData = {
   title: 'NAVARATRI LIGHTS',
   date: 'October 2024',
   description: '',
+  credits: 'Snap Choreography, Tarana, Sanjana Solanki, Shayari Saha, Radhika Bhavsar, Veda Gottumukkala, Saajay Singh, Priya Bhatia, Smriti Panchal, Neha Ramesh, Sonika Saraiya, Ashna Singh, Mason Hudson, Matthew Tran, Anjali Haripriyan, Vaibhavi Jhawar, Rocio Salvatierra, Alaan Patel',
   images: [
     '../Assets/Large-Content/video14.mp4',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749534126/0609_1_x8hdyf.mp4',
@@ -407,6 +412,7 @@ const mediaData = {
   title: 'BIKERS VS SURFERS',
   date: 'July 2024',
   description: '',
+  credits: '',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548206/COVER_rjvpjy.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548204/IMG_2493_pwhca8.jpg',
@@ -442,7 +448,7 @@ const mediaData = {
 'shoot9': {
   title: 'SWINGING IN STYLE',
   date: 'July 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Donya Mirzazadeh, Karthik Punati, Cierra Palmeri, Henry Pham, Lukas Maciel, Matthew Tran, Julian Caballero',
   images: [
     '../Assets/Large-Content/video5.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749523460/COVER_hsowqh.jpg',
@@ -469,7 +475,7 @@ const mediaData = {
 'shoot6': {
   title: 'THE DISCO DEN',
   date: 'July 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Veda Gottumukkala, Saajay Singh, Maya Aquilizan, Angel Tiachi, Olivia Kinoshita, Matthew Tran, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749518357/FIRST_rwppni.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749518418/COVER_yjsypc.jpg',
@@ -504,7 +510,7 @@ const mediaData = {
   'shoot37': {
   title: 'CROSSING IN CONTRAST',
   date: 'April 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Veda Gottumukkala, Kiera Aldridge, Jazzi Baquiran, Aliya Maya, Ryanne Rich, Matthew Tran, Amrutha Gururaja, Hazoor Anad',
   images: [
     '../Assets/Large-Content/video18.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544299/COVER_moc4tg.jpg',
@@ -539,7 +545,7 @@ const mediaData = {
 'shoot26': {
   title: 'MONSOON MEMORIES',
   date: 'April 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Saajay Singh, Samir Khan, Via Rajesh, Matthew Tran, Julian Caballero, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749536879/FIRST_1_phpd5e.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749536880/COVER_ij0k5n.jpg',
@@ -569,7 +575,7 @@ const mediaData = {
   'shoot42': {
   title: 'BOLLYWOOD TO HOLLYWOOD',
   date: 'April 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Rishitha Boddu, Rohan Judge, Shreya Kamath, Donya Mirzazadeh, Julian Caballero, Karthik Punati, Lukas Maciel',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749546303/COVER_rsneyk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749546305/IMG_3900_ub4mrh.jpg',
@@ -601,7 +607,7 @@ const mediaData = {
 'shoot35': {
   title: 'DOUBLE TAKE',
   date: 'December 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Alan Pompa Aguayo, Donovan Mitri, Matthew Tran, Amrutha Gururaja',
   images: [
     '../Assets/Large-Content/video16.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749542757/COVER_f62dho.jpg',
@@ -631,7 +637,7 @@ const mediaData = {
 'shoot20': {
   title: 'OOPS!...SHE DID IT AGAIN',
   date: 'January 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Laasya Kollepara, Shamita Rai, Divora Zeru, Matthew Tran, Amrutha Gururaja',
   images: [
     '../Assets/Large-Content/video13.mp4',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749532059/COVER_uns9wh.jpg',
@@ -663,7 +669,7 @@ const mediaData = {
 'shoot8': {
   title: 'THE AFTER PARTY',
   date: 'March 2024',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Anuja Pandit, Shayari Saha, Aminah Manning, Anisha Raju, Matthew Tran, Amrutha Gururaja, Prisha Jain',
   images: [
     '../Assets/Large-Content/video3.mp4',
     '../Assets/Large-Content/video4.mp4',
@@ -706,7 +712,7 @@ const mediaData = {
 'shoot47': {
   title: '3-IN-1 WITH PEARLESCENT X REYA',
   date: 'October 2023',
-  description: '',
+  credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Naman Kapasi, Miranda Lopez, Amrutha Gururaja, Laasya Kollepara',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548705/COVER_gbrews.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548707/IMG_4155-Edit_xaj6vx.jpg',
@@ -727,7 +733,7 @@ const mediaData = {
   'shoot3': {
     title: 'UPPER EAST SIDE’S RUNAWAY BRIDE',
     date: 'October 2023',
-    description: '',
+    credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Naman Kapasi, Miranda Lopez, Amrutha Gururaja, Laasya Kollepara',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749506626/COVER_edab7z.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749507156/IMG_5651_vfwk2z.jpg',
@@ -759,7 +765,7 @@ const mediaData = {
   'shoot12': {
     title: 'SPOTTED!',
     date: 'October 2023',
-    description: '',
+    credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Naman Kapasi, Miranda Lopez, Amrutha Gururaja, Laasya Kollepara',
     images: [
       '../Assets/Large-Content/video9.mp4',
       '../Assets/Large-Content/video10.mp4',
@@ -787,7 +793,7 @@ const mediaData = {
   'shoot27': {
   title: 'MASKED GLAMOUR',
   date: 'October 2023',
-  description: '',
+  credits: 'Sanjana Solanki, Anuja Pandit, Shayari Saha, Alina Jafri, Nishank Gite, Naman Kapasi, Miranda Lopez, Santiago Padilla, Amrutha Gururaja, Laasya Kollepara',
   images: [
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749537249/FIRST_1_cljliw.mp4',
     'https://res.cloudinary.com/dltjxocio/video/upload/v1749537250/FIRST_2_osrp8v.mp4',
@@ -819,7 +825,7 @@ const mediaData = {
   'shoot18': {
     title: 'POOLSIDE BARBIES',
     date: 'July 2023',
-    description: '',
+    credits: 'Sanjana Solanki, Prisha Jain, Anuja Pandit, Cait Lota, Sana Kamboh, Alan Pompa, Nidhi Sharanya, Lukas Maciel, Amrutha Gururaja',
     images: [
       '../Assets/Large-Content/video12.MP4',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749529816/COVER_gawlae.jpg',
@@ -856,7 +862,7 @@ const mediaData = {
   'shoot28': {
   title: 'MADNESS OF MADNESS',
   date: 'October 2021',
-  description: '',
+  credits: 'Sanjana Solanki, Tori Huynh, Joseangel Peña-Gutierrez, Ariana Stevens, Amrutha Gururaja, Henry Pham, Khushbu Desai',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538159/COVER_lbkosa.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538160/IMG_5744_cvjlpq.jpg',
@@ -886,7 +892,7 @@ const mediaData = {
 'shoot32': {
   title: 'FRESH OFF THE STREET',
   date: 'July 2023',
-  description: '',
+  credits: 'Anuja Pandit, Prisha Jain, Sanjana Solanki, Cait Lota, Ashwin Chembu, Arnav Khinvasara, Joseangel Peña-Gutierrez, Rocio Salvatierra',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749540832/COVER_urynqk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749540834/IMG_5916_suyxai.jpg',
@@ -915,7 +921,7 @@ const mediaData = {
 'shoot43': {
   title: 'BOLLYWOOD BARBIES',
   date: 'June 2023',
-  description: '',
+  credits: 'Sanjana Solanki, Prisha Jain, Anuja Pandit, Alina Jafri, Rishitha Boddu, Smriti Panchal, Neha Ramakrishnan, Shayari Saha, Nitya Tarakad, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749547183/COVER_gl0noi.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749547262/IMG_2315_cx9suv.jpg',
@@ -978,7 +984,7 @@ const mediaData = {
   'shoot4': {
     title: 'TUNE INTO REHEARSAL',
     date: 'April 2023',
-    description: '',
+    credits: 'Sanjana Solanki, Prisha Jain, Anuja Pandit, Alina Jafri, Cait Lota, Noah Dentith, Huston Haro, Julian Kenj, Luka Kolevi, Kai Schmidt, Jacob Schnel, Rocio Salvatierra, Amrutha Gururaja',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749517702/COVER_j1nlj5.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749517711/IMG_4399_cjvfzc.jpg',
@@ -1002,7 +1008,7 @@ const mediaData = {
   'shoot40': {
   title: 'CLASS OF 2023',
   date: 'April 2023',
-  description: '',
+  credits: 'Sonika Saraiya, Sanjana Solanki, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749545426/COVER_namrh1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749545428/IMG_8584-Edit_yzn8jw.jpg',
@@ -1021,7 +1027,7 @@ const mediaData = {
   'shoot19': {
     title: 'PRETTY GIRLS LIKE TRAP MUSIC',
     date: 'February 2023',
-    description: '',
+    credits: 'Sanjana Solanki, Prisha Jain, Anuja Pandit, Alina Jafri, Cait Lota, JJ Manchenella, Sraavya Apuri, Alyssa Pasating, Nidhi Sharanya, Rocio Salvatierra',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749530658/COVER_rwlccc.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749530659/IMG_7487_yvjjor.jpg',
@@ -1061,7 +1067,7 @@ const mediaData = {
   'shoot23': {
   title: 'NO PAPARAZZI',
   date: 'February 2023',
-  description: '',
+  credits: 'Sanjana Solanki, Prisha Jain, Anuja Pandit, Alina Jafri, Cait Lota, JJ Manchenella, George Draper, Amrutha Gururaja, Henry Pham',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749533725/COVER_t5dt60.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749533732/IMG_7156_qdqvhu.jpg',
@@ -1080,7 +1086,7 @@ const mediaData = {
   'shoot16': {
     title: 'PROM KING & QUEEN',
     date: 'November 2022',
-    description: '',
+    credits: 'Sanjana Solanki, Alina Jafri, Cait Lota, JJ Manchenella, Cameron Brown, Nichole Thorne, Rocio Salvatierra',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749527272/COVER_vkrspq.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749527276/IMG_4372_ceq9sf.jpg',
@@ -1110,7 +1116,7 @@ const mediaData = {
   'shoot36': {
   title: 'DEEP INTO THE GARDENS',
   date: 'November 2022',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Cait Lota, JJ Manchenella, Lucy Ma, Aminah Manning, Rocio Salvatierra',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749543646/COVER_ubwyar.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749543653/IMG_5310_dz6del.jpg',
@@ -1140,7 +1146,7 @@ const mediaData = {
   'shoot1': {
     title: 'WELCOME TO THE SLEEPOVER',
     date:  'September 2022',
-    description: '',
+    credits: 'Sanjana Solanki, Alina Jafri, Cait Lota, JJ Manchenella, Liz Heydon, Alie Li, Kadie Qi, Sanjana Dadi',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749505652/COVER_zmi5re.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749505663/046FC060-ED89-4702-8268-3686E640E113_aapuhu.jpg',
@@ -1181,7 +1187,7 @@ const mediaData = {
   'shoot33': {
   title: 'FAST LANE',
   date: 'September 2022',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Cait Lota, JJ Manchenella, Sadiye Yuksel, Amrutha Gururaja, Henry Pham, Sraavya Apuri',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541550/COVER_i0mix1.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541551/IMG_9454_ojtxqc.jpg',
@@ -1206,7 +1212,7 @@ const mediaData = {
   'shoot10': {
     title: 'SUMMER SOIRÉE',
     date: 'July 2022',
-    description: '',
+    credits: 'Sanjana Solanki, Alina Jafri, Ashley Kim, Tanvi Siddhaye, Zean Ylaya, Amrutha Gururaja, Henry Pham',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749523993/COVER_xzhk1d.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749523995/IMG_8886_sbfn7d.jpg',
@@ -1225,7 +1231,7 @@ const mediaData = {
   'shoot24': {
   title: 'NIGHTTIME RENDEZVOUS',
   date: 'July 2022',
-  description: '',
+  credits: 'Sanjana Solanki, Alina Jafri, Ashley Kim, Tanvi Siddhaye, Zean Ylaya, Amrutha Gururaja, Henry Pham',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749533968/COVER_eapcmk.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749533970/IMG_9134_yreeub.jpg',
@@ -1242,7 +1248,7 @@ const mediaData = {
   'shoot22': {
     title: 'ON COURT',
     date: 'March 2022',
-    description: '',
+    credits: 'Sanjana Solanki, Amrutha Gururaja, Neena Vennameni',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749533329/COVER_fxqqkb.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749533363/IMG_7443_yqk7vn.jpg',
@@ -1268,7 +1274,7 @@ const mediaData = {
   'shoot2': {
     title: 'UPTOWN GIRL',
     date: 'February 2022',
-    description: '',
+    credits: 'Sanjana Solanki, Siobhan Robinson, Amrutha Gururaja, Henry Pham, Neena Vennameni',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749506099/COVER_mztuzx.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749506106/IMG_6749_iu469b.jpg',
@@ -1287,7 +1293,7 @@ const mediaData = {
   'shoot17': {
     title: 'PROJECTED BEAUTY',
     date: 'January 2022',
-    description: '',
+    credits: 'Olivia Gonzales, Sanjana Solanki',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749527626/COVER_bac14z.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749527666/IMG_0043_ip8ild.jpg',
@@ -1311,7 +1317,7 @@ const mediaData = {
   'shoot15': {
     title: 'PURPLE REIGN',
     date: 'September 2021',
-    description: '',
+    credits: 'Sanjana Solanki, Tori Huynh, Niya Maudgalya, Alyssa Pasating, Amrutha Gururaja, Henry Pham',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526820/COVER_hqdahu.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749526839/IMG_4039_n36tym.jpg',
@@ -1329,7 +1335,7 @@ const mediaData = {
 'shoot31': {
   title: 'GAME ON',
   date: 'August 2021',
-  description: '',
+  credits: 'Sanjana Solanki, Tori Huynh, Janessa Freeman, Ashley Mehta, Bianca Navarro, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541131/COVER_hpqmhs.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749541132/IMG_2823_fio7ha.jpg',
@@ -1356,7 +1362,7 @@ const mediaData = {
   'shoot44': {
   title: 'A TOUCH OF CLASS',
   date: 'July 2021',
-  description: '',
+  credits: 'Sanjana Solanki, Liz Heydon, Tori Huynh, Disha Desai, Mateo Urquidez, Amrutha Gururaja',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548007/COVER_ne08ax.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548019/IMG_2122_muk1rv.jpg',
@@ -1391,7 +1397,7 @@ const mediaData = {
 'shoot41': {
   title: 'CALIFORNIA GIRLS',
   date: 'June 2021',
-  description: '',
+  credits: 'Liz Heydon, Sanjana Solanki, Tori Huynh, Alie Li, Kadie Qi, Prisha Jain, Niya Maudgalya, Ash Kumar',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749545683/COVER_2_hx0zrr.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749545684/IMG_8594_eyxxar.jpg',
@@ -1420,7 +1426,7 @@ const mediaData = {
 'shoot46': {
   title: 'ABOVE THE ORDINARY',
   date: 'June 2021',
-  description: '',
+  credits: 'Sanjana Solanki, Alie Li, Kadie Qi, Ash Kumar, Prisha Jain, Niya Maudgalya',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548538/COVER_psr095.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749548538/IMG_5745_zs9om8.jpg',
@@ -1446,7 +1452,7 @@ const mediaData = {
   'shoot30': {
   title: 'GRAFFITI GROOVE',
   date: 'May 2021',
-  description: '',
+  credits: 'Sanjana Solanki, Ash Kumar, Kyle Yun',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538699/COVER_dem8tl.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749538701/IMG_1836_vwrgjn.jpg',
@@ -1471,7 +1477,7 @@ const mediaData = {
   'shoot38': {
   title: 'CONCRETE DREAMS',
   date: 'April 2021',
-  description: '',
+  credits: 'Disha Desai, Sanjana Solanki',
   images: [
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544754/Yes_-5_fg2ctz.jpg',
     'https://res.cloudinary.com/dltjxocio/image/upload/v1749544754/IMG_9537_yrltxu.jpg',
@@ -1492,7 +1498,7 @@ const mediaData = {
   'shoot5': {
     title: 'THE GRASS IS GREENER',
     date: 'March 2021',
-    description: '',
+    credits: 'Sanjana Solanki, Sanjana Dadi',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749518015/IMG_6645_pkddod.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749518012/IMG_6735_c3ygk3.jpg',
@@ -1510,7 +1516,7 @@ const mediaData = {
   'shoot13': {
     title: 'SOFT TIES & SUNNY SKIES',
     date: 'March 2021',
-    description: '',
+    credits: 'Sonika Saraiya, Sanjana Solanki',
     images: [
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525828/COVER_w9zoeo.jpg',
       'https://res.cloudinary.com/dltjxocio/image/upload/v1749525838/IMG_9992_1_wsabor.jpg',
