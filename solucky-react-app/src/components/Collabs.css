@@ -71,9 +71,9 @@
     gap: 5px;
     scroll-behavior: smooth;
     width:99vw;
-    padding-top: 24px;
+    padding-top: 12px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    padding-bottom: 28px;
     white-space: nowrap; /* Prevent wrapping */
     margin-bottom: 112px;
 }
