@@ -156,14 +156,11 @@
 }
 
 .gallery-credits-label {
-  display: inline-block;
   font-family: "Bai Jamjuree";
   font-size: 14px;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #030303;
-  opacity: 0.75;
-  margin-bottom: 4px;
+  font-weight: 400;
 }
 
 .gallery-credits-list {

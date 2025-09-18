@@ -106,14 +106,8 @@ export default function Gallery({
             {/* NEW: Credits section (above description) */}
             {hasCredits && (
               <div className="gallery-credits">
-                <span className="gallery-credits-label">Credits</span>
-                {Array.isArray(credits) ? (
-                  <p className="gallery-credits-list">
-                    {credits.join(" • ")}
-                  </p>
-                ) : (
-                  <p className="gallery-credits-list">{credits}</p>
-                )}
+                <span className="gallery-credits-label">Credits:  </span>
+                <span className="gallery-credits-list">{credits}</span>
               </div>
             )}
 
