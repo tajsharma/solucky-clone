@@ -162,7 +162,7 @@ const collabData = {
   },
 
     'palam': {
-    title: 'palam-colective',
+    title: 'palam-collective',
     date: 'October 2024',
     description: 'We were thrilled to collaborate with Palam Collective, founded by Keertana Padmanaban, for our 3-in-1 photoshoot showcasing 1 piece styled in 3 different ways. The brand blends South Indian craftsmanship with sustainable fashion, honoring both tradition & contemporary design. Keertana’s dedication to sustainability & heritage made Palam Collective the perfect fit for the shoot.',
     thumbnail: '../Assets/Collabs/collab-4.png',
