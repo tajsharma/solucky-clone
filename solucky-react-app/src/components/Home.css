@@ -31,25 +31,6 @@ object-fit: contain;
 display: block;
 }
 
-.tv-video-overlay {
-position: absolute;
-  top: 58.5%;
-  left: 66.5%;
-  width: 17.5%;
-  height: 23.5%;
-  z-index: 1;
-  border-radius: 6px;
-  overflow: hidden;
-  transform: rotate(3deg);
-  transform-origin: center;
-}
-
-.tv-video-overlay video {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-
 
 .hero-text {
   font-family: serif;
@@ -409,6 +390,8 @@ padding: 7rem 2rem;
   width: 100%;
   height: auto;
   max-width: 100%;
+  max-height: 100vh;
+
 }
 /* optional: prevent scrolling while video plays */
 body.loading {

@@ -18,40 +18,29 @@ const labels = [
 
 const Home = () =>{
     const loop = [...labels, ...labels];
-
-    const videoOptions = [
-        "../Assets/Home/home_video1.mp4",
-        "../Assets/Home/home_video2.mp4",
-    ];
-
-    const randomVideo = videoOptions[Math.floor(Math.random() * videoOptions.length)];
     const [loading, setLoading] = useState(true);
   
     const loadingVidRef = useRef(null);
     const heroVidRef   = useRef(null);
   
     // Try to play a video element; retry on canplay, and add a one-time user-gesture fallback.
-    const tryPlay = (videoEl) => {
-      if (!videoEl) return;
-      videoEl.muted = true;           // extra-safe for iOS
-      const attempt = () =>
-        videoEl.play().catch(() => {/* ignore; we’ll use fallback */});
-  
-      attempt();
-  
-      // If the browser needs data first, try again when it can play.
-      const onCanPlay = () => attempt();
-      videoEl.addEventListener("canplay", onCanPlay, { once: true });
-  
-      // Gesture fallback (only if autoplay was blocked).
-      const onFirstTouch = () => {
+    const tryPlay = (el) => {
+        if (!el) return;
+        el.muted = true;
+        const attempt = () => el.play().catch(() => {
+          const onFirstTouch = () => {
+            el.play().finally(() => {
+              document.removeEventListener("touchend", onFirstTouch);
+              document.removeEventListener("click", onFirstTouch);
+            });
+          };
+          document.addEventListener("touchend", onFirstTouch, { once: true });
+          document.addEventListener("click", onFirstTouch, { once: true });
+        });
         attempt();
-        document.removeEventListener("touchend", onFirstTouch);
-        document.removeEventListener("click", onFirstTouch);
+        el.addEventListener("canplay", () => attempt(), { once: true });
       };
-      document.addEventListener("touchend", onFirstTouch, { once: true });
-      document.addEventListener("click", onFirstTouch, { once: true });
-    };
+      
   
     useEffect(() => {
       document.body.classList.toggle("loading", loading);
@@ -71,7 +60,7 @@ const Home = () =>{
               <video
                 ref={loadingVidRef}
                 className="loading-video"
-                src="/Assets/Home/loading-screen.mp4"
+                src="../Assets/Home/loading-screen.mp4"
                 autoPlay
                 muted
                 playsInline          // iOS inline playback
