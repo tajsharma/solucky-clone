@@ -23,7 +23,7 @@ const collabData = {
     ]
   },
   'classic-loot': {
-    title: 'classic Loot',
+    title: 'classic loot',
     date: 'April 2025',
     description: 'We collaborated with Classic Loot, a Japantown thrift shop curating unique pieces with/from small businesses. They provided standout clothing, paired with solucky wardrobe items, to create bold & office-ready looks. This collaboration celebrated sustainable fashion while celebrating sustainability, local vendors, & fashion with purpose.',
     thumbnail: '../Assets/Collabs/collab-20.png',
