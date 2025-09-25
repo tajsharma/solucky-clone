@@ -4,6 +4,23 @@ import Footer from './Footer';
 import Gallery from './Gallery';
 
 const collabData = {
+  'gardenia': {
+    title: 'gardenia',
+    date: 'Spring 2025',
+    description: 'We partnered with Gardenia, a Los Gatos coffee house, restaurant, & event space. Set in a Victorian-style mansion, this location blends ethically sourced coffee with Asian-fusion cuisine & French gastronomy. Gardenia celebrated their “Year in Bloom,” with curated specials, live music, & community gatherings that showcase culture, flavor, & creativity.',
+    thumbnail: '../Assets/Collabs/collab-22.png',
+    images:[
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834948/FIRST_1_koqwdf.jpg", 
+      '../Assets/Large-Content/gardenia-video.MP4',
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834948/COVER_t1llqf.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834947/_DSC0438-Enhanced-NR_fwi4ck.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834947/_DSC0414-Enhanced-NR_vh4qjw.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834945/_DSC0075-Enhanced-NR_ngofgw.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834946/_DSC0241-Enhanced-NR_nkcnzt.jpg",
+      "https://res.cloudinary.com/dltjxocio/image/upload/v1758834945/_DSC0067-Enhanced-NR_rh6bhs.jpg"
+    ]
+  },
+
   'merazine': {
     title: 'merazine',
     date: 'April 2025',
