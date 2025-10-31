@@ -21,7 +21,7 @@ const Flipbook = () => {
       startPage={2}    // ← add this line
     >
       <div className="page-template cover">
-        <img src="../Assets/Flipbook/cover1.png" className="page-image"></img>
+        <img src="../Assets/Flipbook/cover.png" className="page-image"></img>
       </div>
       <div className="page-template page1">
         <img src="../Assets/Flipbook/page1.png" className="page-image"></img>
@@ -215,8 +215,71 @@ const Flipbook = () => {
       <div className="page-template page64">
         <img src="../Assets/Flipbook/page64.png" className="page-image"></img>
       </div>
-      <div className="page-template back-cover">
-        <img src="../Assets/Flipbook/back-cover.png" className="page-image"></img>
+      <div className="page-template page65">
+        <img src="../Assets/Flipbook/page65.png" className="page-image"></img>
+      </div>
+      <div className="page-template page66">
+        <img src="../Assets/Flipbook/page66.png" className="page-image"></img>
+      </div>
+      <div className="page-template page67">
+        <img src="../Assets/Flipbook/page67.png" className="page-image"></img>
+      </div>
+      <div className="page-template page68">
+        <img src="../Assets/Flipbook/page68.png" className="page-image"></img>
+      </div>
+      <div className="page-template page69">
+        <img src="../Assets/Flipbook/page69.png" className="page-image"></img>
+      </div>
+      <div className="page-template page70">
+        <img src="../Assets/Flipbook/page70.png" className="page-image"></img>
+      </div>
+      <div className="page-template page71">
+        <img src="../Assets/Flipbook/page71.png" className="page-image"></img>
+      </div>
+      <div className="page-template page72">
+        <img src="../Assets/Flipbook/page72.png" className="page-image"></img>
+      </div>
+      <div className="page-template page73">
+        <img src="../Assets/Flipbook/page73.png" className="page-image"></img>
+      </div>
+      <div className="page-template page74">
+        <img src="../Assets/Flipbook/page74.png" className="page-image"></img>
+      </div>
+      <div className="page-template page75">
+        <img src="../Assets/Flipbook/page75.png" className="page-image"></img>
+      </div>
+      <div className="page-template page76">
+        <img src="../Assets/Flipbook/page76.png" className="page-image"></img>
+      </div>
+      <div className="page-template page77">
+        <img src="../Assets/Flipbook/page77.png" className="page-image"></img>
+      </div>
+      <div className="page-template page78">
+        <img src="../Assets/Flipbook/page78.png" className="page-image"></img>
+      </div>
+      <div className="page-template page79">
+        <img src="../Assets/Flipbook/page79.png" className="page-image"></img>
+      </div>
+      <div className="page-template page80">
+        <img src="../Assets/Flipbook/page80.png" className="page-image"></img>
+      </div>
+      <div className="page-template page81">
+        <img src="../Assets/Flipbook/page81.png" className="page-image"></img>
+      </div>
+      <div className="page-template page82">
+        <img src="../Assets/Flipbook/page82.png" className="page-image"></img>
+      </div>
+      <div className="page-template page83">
+        <img src="../Assets/Flipbook/page83.png" className="page-image"></img>
+      </div>
+      <div className="page-template page84">
+        <img src="../Assets/Flipbook/page84.png" className="page-image"></img>
+      </div>
+      <div className="page-template page85">
+        <img src="../Assets/Flipbook/page85.png" className="page-image"></img>
+      </div>
+      <div className="page-template page86">
+        <img src="../Assets/Flipbook/page86.png" className="page-image"></img>
       </div>
     </HTMLFlipBook>
   );
