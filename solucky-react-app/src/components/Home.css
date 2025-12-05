@@ -197,7 +197,7 @@ padding: 7rem 2rem;
 }
 
 .bottom-issue-arrow-caption{
-  margin-left: -100px;
+  margin-left: -20px;
 }
 
 .issue-arrow-caption{
@@ -209,14 +209,8 @@ padding: 7rem 2rem;
     line-height: normal;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: flex;
 }
-
-.arrow-image{
-  width: 100px;
-  margin-left: -20px;
-  margin-top: 30px;
-}
-
 
 .flipbook-canvas {
   width: 100%;
@@ -262,12 +256,19 @@ padding: 7rem 2rem;
   width: 95%;
 }
 
+.arrow-image{
+  width: 8vw;
+  margin-left: -50px;
+  margin-top: 30px;
+}
+
+
 .arrow-image-1{
   width: 20vw;
 }
 
 .arrow-image-2{
-  width: 10vw;
+  width: 12vw;
   margin-top: 40px;
 }
 
@@ -333,6 +334,7 @@ padding: 7rem 2rem;
 @media screen and (max-width: 1259px){
   .flipbook-arrow-container{
     padding-bottom: 0px;
+    width: 90vw;
   }
 
   .arrow-image-1{
@@ -340,7 +342,7 @@ padding: 7rem 2rem;
   }
 }
 
-    @media screen and (max-width: 1170px){
+@media screen and (max-width: 1170px){
   .whats-new-title{
     font-size:85px;
   }
@@ -354,6 +356,10 @@ padding: 7rem 2rem;
 
   .paragraph-message-home{
     font-size: 20px;
+  }
+
+  .issue-arrow-caption{
+    font-size: 35px;
   }
 }
 
@@ -370,6 +376,18 @@ padding: 7rem 2rem;
 
   .paragraph-message-home {
       font-size: 25px;
+  }
+
+  .issue-arrow-caption{
+    font-size: 25px;
+  }
+
+  .arrow-image{
+    margin-left: -180px;
+  }
+
+  .playlist-arrow-container{
+    margin-left: 0px;
   }
 }
 
@@ -397,6 +415,10 @@ padding: 7rem 2rem;
 
   .flipbook-canvas {
     padding: 1rem;        /* a bit more breathing room on tiny screens */
+  }
+  
+  .bottom-issue-arrow-caption{
+    margin-left: -5px;
   }
   
 }

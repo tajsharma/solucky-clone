@@ -238,7 +238,7 @@ const Home = () =>{
                         <div className='spotify-pointer-container'>
                             <div className="playlist-arrow-container"> 
                                 <p className="issue-arrow-caption">
-                                    explore the issue #25
+                                    explore the issue #26
                                 </p>
                                 <p className="issue-arrow-caption playlist-bottom-caption">
                                     spotify playlist
