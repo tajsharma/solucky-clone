@@ -186,6 +186,38 @@ padding: 7rem 2rem;
   align-items: center;
 }
 
+.issue-arrow-container{
+  display: flex;
+}
+
+.issue-arrow-caption-container{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.bottom-issue-arrow-caption{
+  margin-left: -100px;
+}
+
+.issue-arrow-caption{
+    color: #FF6265;
+    font-family: "Oooh Baby";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.arrow-image{
+  width: 100px;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+
 .flipbook-canvas {
   width: 100%;
   max-width: 1200px;       /* limits size on big screens */
@@ -217,6 +249,13 @@ padding: 7rem 2rem;
 .spotify-pointer-container{
   text-align: left;
   padding-bottom: 48px;
+  display: flex;
+  gap: 30px;
+}
+
+.playlist-arrow-container{
+  display: flex;
+  flex-direction: column;
 }
 
 .playlist-container{
@@ -228,7 +267,8 @@ padding: 7rem 2rem;
 }
 
 .arrow-image-2{
-  width: 30vw;
+  width: 10vw;
+  margin-top: 40px;
 }
 
 

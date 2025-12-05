@@ -219,7 +219,13 @@ const Home = () =>{
 
                 <section className="flipbook-section">
                     <div className='flipbook-arrow-container'>
-                        <img src='../Assets/Home/issue-number-pointer.svg' className='arrow-image-1' alt='newest-issue-below'></img>
+                        <div className="issue-arrow-container">
+                            <div className="issue-arrow-caption-container">
+                                <p className="issue-arrow-caption">issue #26</p>
+                                <p className="issue-arrow-caption bottom-issue-arrow-caption">out now!</p>
+                            </div>
+                            <img src='../Assets/Home/issuearrow.svg' className='arrow-image' alt='newest-issue-below'></img> 
+                        </div>
                         <img src='../Assets/Home/click2read-pointer.svg' className='arrow-image-1' alt='flip-to-read' ></img>
                     </div>
                     <div className='flipbook-canvas'>
@@ -230,8 +236,17 @@ const Home = () =>{
                 <section className='spotify-playlist-section'>
                     <div className='playlist-container'>
                         <div className='spotify-pointer-container'>
-                            <img src='../Assets/Home/spotify-pointer.svg' className='arrow-image-2' alt='exlpore spotify' ></img>   
+                            <div className="playlist-arrow-container"> 
+                                <p className="issue-arrow-caption">
+                                    explore the issue #25
+                                </p>
+                                <p className="issue-arrow-caption playlist-bottom-caption">
+                                    spotify playlist
+                                </p>
+                            </div>
+                            <img src='../Assets/Home/playlistarrow.svg' className='arrow-image-2' alt='exlpore spotify' ></img>   
                         </div>
+
                         <iframe
                             style={{ borderRadius: '12px' }}
                             src="https://open.spotify.com/embed/playlist/1zwpf2nRcjwU9fKsrBBtKg?utm_source=generator"
