@@ -1,224 +1,244 @@
-.navbar{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    z-index: 999;
-    margin-top: 82px;
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 80px 0;
+  box-sizing: border-box;
 }
 
-/* 1. Globally neutralize visited-link color so no link ever changes hue */
+/* ===== LINK RESET ===== */
 .navbar a:visited {
   color: inherit;
 }
 
-/* 2. Ensure every link in the navbar simply inherits its parent’s color */
-.navbar .navList a,
-.navbar .header a {
+.navbar a {
   color: inherit;
   text-decoration: none;
 }
 
-/* 3. Your two “themes” (black on light vs. white on dark) already live here: */
-.navbar .navList a { color: #030303; }                   /* default */
-.white-navbar .navList a { color: #f5f5f5; }          
-
-.navbar .header .title{
-    font-size: 35px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    margin-top: 0px;
+/* ===== NAVBAR ROW (logo left, nav right) ===== */
+.navbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-
-.navbar .header .titleCaption{
-    padding-top: 2px;
-    font-size: 20px;
-    margin-top: -10px;
-    font-weight: 400;
+/* ===== LOGO ===== */
+.navbar-logo a {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #030303;
 }
 
-.navbar .navList{
-    list-style-type: none;
-    display: flex;
-    gap: 60px;
-    justify-content: center ;
-    padding-left: 0px;
-    flex-wrap: wrap;
+.logo-title {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 400;
 }
 
-.navbar .navList a{
-    text-decoration: none;
-    color: #030303;
-    font-weight: 400;
-    font-size: 25px;
-    transition:color .3s ease;
-    position: relative;
-    padding-bottom: 10px; /* adds space between underline and item*/
+.logo-caption {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
 }
 
-.navbar .navList a::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 0;
-    height: 4px;
-    background: currentColor;   /* <-- was hardcoded black */
-    border-radius: 10px;
-    bottom: 0;
-    transition: width .3s ease, left .3s ease;
+/* ===== NAV RIGHT (links + divider + social) ===== */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ===== NAV LIST ===== */
+.navList {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navList a {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #030303;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navList a:hover {
+  color: #A92828;
+}
+
+.navList a.active {
+  color: #A92828;
+}
+
+/* ===== BOTTOM BORDER ===== */
+.navbar-border {
+  width: 100%;
+  height: 2px;
+  background-color: #030303;
+  margin-top: 16px;
+}
+
+/* ===== WHITE THEME (events, media pages) ===== */
+.white-navbar .navbar-logo a,
+.white-navbar .navList a {
+  color: #f5f5f5;
+}
+
+.white-navbar .navList a:hover,
+.white-navbar .navList a.active {
+  color: #A92828;
+}
+
+.white-navbar .navbar-border {
+  background-color: #f5f5f5;
+}
+
+/* ===== MOBILE MENU ICON ===== */
+.menu-toggle-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 1400px) {
+  .navbar {
+    padding: 16px 60px 0;
   }
 
-.navbar .navList a:hover:after {
-    width: 100%; /* **Expand the underline fully across the text** */
-    left: 0; /* **Move it to the left to fill the entire width** */
+  .navList {
+    gap: 20px;
+  }
+
+  .navList a {
+    font-size: 18px;
+  }
 }
 
-.navList a.active::after {
-    width: 100%;
-    left: 0;
-}
+@media screen and (max-width: 1100px) {
+  .navbar {
+    padding: 14px 40px 0;
+  }
 
-.white-navbar .header{
-    color: white;
-}
+  .navList {
+    gap: 16px;
+  }
 
-.white-navbar .navList a {
-    color: white; /* Change the font color to white */
-}
+  .navList a {
+    font-size: 16px;
+  }
 
-.white-navbar .navList a::after {
-    background: white; /* Change the underline color to white */
-}
+  .logo-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
 
-.menu-toggle-icon {
+  .logo-caption {
+    font-size: 16px;
+  }
+
+  .navbar-social svg {
     width: 20px;
     height: 20px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    z-index: 1000;
+  }
 }
-
-
-@media screen and (max-width: 1512px) {
-    .navbar{
-        margin-top: 72px;
-    }
-}
-
-@media screen and (max-width: 1320px){
-    .navbar{
-        margin-top: 62px;
-    }
-}
-
-
-  /* Responsive adjustments for smaller screens */
-@media screen and (max-width: 1200px) {
-    .navbar .navList {
-        gap: 40px; /* Decrease the gap between items */
-    }
-
-    .navbar .navList a {
-        font-size: 22px; /* Slightly smaller font size for smaller screens */
-    }
-}
-
-
-@media screen and (max-width: 1180px){
-    .navbar{
-        margin-top: 56px;
-    }
-}
-
 
 @media screen and (max-width: 900px) {
-    .navbar .navList {
-        gap: 20px; /* Reduce gap further for even smaller screens */
-    }
+  .navbar {
+    padding: 12px 24px 0;
+  }
 
-    .navbar .navList a {
-        font-size: 18px; /* Decrease font size further */
-    }
+  .navList {
+    gap: 12px;
+  }
 
-    .navbar .header .title {
-        font-size: 28px; /* Reduce title size for small screens */
-    }
+  .navList a {
+    font-size: 14px;
+  }
 
-    .navbar .header .titleCaption {
-        font-size: 16px; /* Adjust caption size */
-    }
+  .logo-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .logo-caption {
+    font-size: 14px;
+  }
+
+  .navbar-social {
+    gap: 8px;
+  }
+
+  .navbar-social svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
-    .navbar {
-      align-items: center;
-      text-align: center;
-      position: sticky;   /* keeps it at top, pushes content below */
-      top: 0;
-      margin-top: 0;      /* <-- remove the gap that caused the white bar */
-      padding: 12px 0;
-      z-index: 100;
-      background: #f5f5f5;  /* default light background */
-    }
-  
-    /* Flip theme for dark pages */
-    .white-navbar {
-      background: #030303;
-    }
-  
-    .navbar .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      width: 100%;
-      margin-top: 0;
-    }
-  
-    .navbar .title {
-      font-size: 28px;
-      margin-bottom: 0;
-    }
-  
-    .navbar .titleCaption {
-      font-size: 16px;
-      margin-top: 2px;
-    }
-  
-    .navbar .navList {
-      display: none;
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-      width: 100%;
-      margin-top: 8px;
-  
-      background: #f5f5f5;
-      color: #030303;
-      border-radius: 12px;
-      padding: 14px 12px;
-    }
-  
-    .white-navbar .navList {
-      background: #030303;
-      color: #f5f5f5;
-
-    }
-  
-    .white-navbar .navList a {
-      color: #f5f5f5;
-    }
-  
-    .navbar .navList a {
-      font-size: 16px;
-    }
-  
-    .navbar .navList.show { display: flex; }
-    .navbar .navList.hide { display: none; }
+  .navbar {
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    padding: 12px 20px;
+    background: #f5f5f5;
   }
-  
+
+  .white-navbar {
+    background: #030303;
+  }
+
+  .navbar-row {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .navbar-logo {
+    flex: 1;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding-top: 12px;
+    display: none;
+  }
+
+  .navbar-right.show {
+    display: flex;
+  }
+
+  .navbar-right.hide {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navList a {
+    font-size: 16px;
+  }
+
+  .navbar-border {
+    margin-top: 12px;
+  }
+}
