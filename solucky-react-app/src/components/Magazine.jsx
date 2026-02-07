@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from "react";
 import './Magazine.css';
-import Footer from './Footer';
 
 const paperPics = [
     "/Assets/Magazine/paper-1.png",
@@ -234,7 +233,6 @@ const Magazine = () =>{
                 </div>
             </div>
         
-        <Footer/>
         </section>       
     )
 }

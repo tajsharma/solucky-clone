@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Footer from './Footer';
 import './Team.css'
 import Gallery from './Gallery';
 
@@ -1973,7 +1972,6 @@ const Team = () =>{
                 </div>
             </section>
 
-            <Footer/>
         </div>
     );
 }

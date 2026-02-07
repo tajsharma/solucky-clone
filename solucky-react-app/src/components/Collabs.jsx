@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Collabs.css';
-import Footer from './Footer';
 import Gallery from './Gallery';
 
 const collabData = {
@@ -542,7 +541,6 @@ const Collabs = () =>{
                 onClose={() => setOpenGalleryKey(null)}
                 />
             )}
-        <Footer/>
         </div>
     )
 }

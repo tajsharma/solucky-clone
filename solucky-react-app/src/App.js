@@ -8,6 +8,7 @@ import Magazine from './components/Magazine';
 import Events from './components/Events';
 import Media from './components/Media';
 import Collabs from './components/Collabs';
+import Footer from './components/Footer';
 import './components/Navbar.css';
 import './App.css';
 
@@ -26,7 +27,7 @@ function App() {
           <Route path="/media" element={<Media/>} />
           <Route path="/collabs" element={<Collabs/>} />
         </Routes>
-
+        <Footer />
       </div>
     </Router>
 

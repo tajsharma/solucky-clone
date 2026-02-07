@@ -1,221 +1,253 @@
-.footer{
+.footer {
     display: flex;
+    flex-direction: column;
     padding: 50px 80px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 96px;
     background-color: #030303;
     width: 100vw;
-    align-self: stretch;
     box-sizing: border-box;
 }
 
-.footer-card{
+.footer-subscribe {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.footer-subscribe-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe-text p {
+    color: #f5f5f5;
+    font-family: "DM Serif Text";
+    font-size: 72px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.footer-subscribe-text .text-italic {
+    font-style: italic;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    align-items: stretch;
+    flex: 0.75;
+    min-width: 0;
+}
+
+.footer-subscribe-input {
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #f5f5f5;
+    font-family: "Bai Jamjuree";
+    font-size: 14px;
+    padding: 12px 16px;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.footer-subscribe-input::placeholder {
+    color: rgba(245, 245, 245, 0.5);
+}
+
+.footer-subscribe-btn {
+    background: #f5f5f5;
+    color: #030303;
+    border: 1px solid #f5f5f5;
+    font-family: "Bai Jamjuree";
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.footer-subscribe-btn:hover {
+    background: #030303;
+    color: #f5f5f5;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    flex: 1;
 }
 
-.footer-card-title{
-    color: #F5F5F5;
-    text-align: center;
+.footer-card-title {
+    color: #f5f5f5;
     font-family: "Bai Jamjuree";
-    font-size: 25px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 96% */
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
 }
 
-.footer-card.num1{
-    height: 190px;
-    width: 190px;
+.footer-grid {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.footer-card.num2{
-    height: 160px;
-    width: 245px;
+.footer-grid .footer-nav {
+    flex: 1;
 }
 
-.explore-links{
-    color: rgba(245, 245, 245, 0.80);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Bai Jamjuree";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 138.889% */
-}
-
-.left-links{
+.footer-column {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    gap:15px;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.right-links{
+.footer-separator {
+    background-color: #fafafa;
+    height: 1px;
+    width: 100%;
+}
+
+.footer-nav {
     display: flex;
     flex-direction: column;
-    gap:15px;
-    text-align: left;
+    gap: 2px;
+    align-items: flex-start;
 }
 
-.explore-links-container{
-    display: flex;
-    justify-content: space-between;
-    gap:40px;
-}
-
-.join-team-links{
-    color: rgba(245, 245, 245, 0.80);
-    font-feature-settings: 'liga' off, 'clig' off;
+.footer-link {
+    color: #f5f5f5;
     font-family: "Bai Jamjuree";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 138.889% */
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
-    text-align:left;
-    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    margin: 0;
 }
 
-.logo-links-div{
+.footer-social {
     display: flex;
-    justify-content: space-evenly;
+    gap: 12px;
     align-items: center;
-    gap: 17.532px;
-    width: 200px;
 }
 
-.email-link{
-    color: rgba(245, 245, 245, 0.80);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Bai Jamjuree";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 138.889% */
-}
-
-.touch-link-container{
+.footer-social a {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left; 
-    width: 260px;
-    height: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
-.position-name{
-    color: rgba(245, 245, 245, 0.80);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Bai Jamjuree";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.bold-position{
-    color: rgba(245, 245, 245, 0.80);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Bai Jamjuree";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px; /* 138.889% */
-}
-
-.acknowledgement-container{
-    display: flex;
-    flex-direction: column;
+.footer-nav p.footer-link {
     text-align: left;
-    gap: 15px;
 }
 
-/* 1) On medium-large screens (<=1024px), let cards wrap, shrink & reduce type */
+.footer-copyright {
+    width: 100%;
+}
+
+.footer-copyright p {
+    color: #f5f5f5;
+    font-family: "Bai Jamjuree";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Medium screens */
 @media (max-width: 1224px) {
     .footer {
-      justify-content: center;
-      padding: 40px 32px;
-      gap: 24px;
+        padding: 40px 32px;
+        gap: 60px;
     }
-  
-    .footer-card {
-      /* Allow each card to grow or shrink, with a comfortable min width */
-      flex: 1 1 280px;
-      max-width: 320px;
-      height: auto;     /* kill your fixed-height constraints */
-      width: auto;      /* kill your fixed-width constraints */
-    }
-  
-    .footer-card-title {
-      font-size: 20px;
-      line-height: 1.2;
-    }
-  
-    .explore-links,
-    .join-team-links,
-    .email-link,
-    .position-name,
-    .bold-position {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-  
-    .logo-links-div {
-      gap: 12px;
-      width: auto;
-      justify-content: flex-start;
-    }
-  }
-  
 
-  /* 2) On small screens (<= 600px), stack everything vertically & shrink further */
-  @media (max-width: 940px) {
-    .footer {
-      flex-direction: column;
-      align-items: start;
-      padding: 24px 16px;
-      gap: 32px;
+    .footer-columns {
+        flex-wrap: wrap;
+        gap: 40px;
     }
-  
+
     .footer-card {
-      flex: 1 1 100%;
-      max-width: none;
-      width: 100%;
-      text-align: center;  /* center-align links for mobile */
+        flex: 1 1 200px;
+        max-width: 320px;
     }
-  
-    .footer-card.num1 .explore-links-container,
-    .footer-card.num3 .logo-links-div,
-    .footer-card.num4 .acknowledgement-container {
-      justify-content: start;
-      align-items: start;
-    }
-  
+
     .footer-card-title {
-      font-size: 18px;
+        font-size: 20px;
     }
-  
-    .explore-links,
-    .join-team-links,
-    .email-link,
-    .position-name,
-    .bold-position {
-      font-size: 12px;
-      line-height: 1.3;
+
+    .footer-link {
+        font-size: 14px;
     }
-  }
-  
+
+    .footer-subscribe-text p {
+        font-size: 52px;
+    }
+
+}
+
+/* Small screens */
+@media (max-width: 940px) {
+    .footer {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 48px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-card {
+        flex: 1 1 100%;
+        max-width: none;
+        width: 100%;
+    }
+
+    .footer-card-title {
+        font-size: 18px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .footer-copyright p {
+        font-size: 12px;
+    }
+
+    .footer-subscribe {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .footer-subscribe-text p {
+        font-size: 36px;
+    }
+
+}
