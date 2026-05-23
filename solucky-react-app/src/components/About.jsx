@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import Footer from './Footer';
 import Gallery from './Gallery';
 import './About.css';
 
@@ -176,7 +175,6 @@ const About = () => {
           </div> 
       </div>
     </div>
-    <Footer/>
     </>
   );
 };

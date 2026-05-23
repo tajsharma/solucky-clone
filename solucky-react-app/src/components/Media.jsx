@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './Media.css';
-import Footer from './Footer';
 import EmbeddedContent from "./EmbeddedContent";
 import Gallery from "./Gallery";
 
@@ -1841,7 +1840,6 @@ const Media = () => {
                 onClose={() => setOpenMediaKey(null)}
                 />
             )}
-            <Footer/>
         </div>
     )
 }

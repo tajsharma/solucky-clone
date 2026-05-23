@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import "./Events.css";
-import Footer from "./Footer";
 import Gallery from "./Gallery";
 
 const stripPhrases = [
@@ -276,7 +275,6 @@ const Events = () => {
       />
       )}
 
-      <Footer />
     </div>
   );
 };

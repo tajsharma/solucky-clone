@@ -1,7 +1,6 @@
 // Shop.jsx
 import React, { useEffect, useRef } from "react";
 import "./Shop.css";
-import Footer from "./Footer";
 
 const Shop = () => {
   const scrollRef = useRef(null);
@@ -110,7 +109,6 @@ const Shop = () => {
         <img className="cloth-pile-image" src="Assets/Shop/clothpile.png" alt="clothes-pile" />
       </div>
 
-      <Footer />
     </div>
   );
 };

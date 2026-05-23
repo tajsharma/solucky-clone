@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Home.css'
 import sep from "./src-assets/four-leaf-clover.png";
-import Footer from "./Footer";
 import Flipbook from "./Flipbook";
 import { Link } from "react-router-dom";
 
@@ -257,7 +256,6 @@ const Home = () =>{
                         />
                     </div>
                 </section>
-                <Footer/>
             </div>
         </>
       );
